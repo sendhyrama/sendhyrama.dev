@@ -1,5 +1,3 @@
-![Frame](https://user-images.githubusercontent.com/41937681/181583067-95791786-af6d-46bb-8a03-31f621a2e05a.png)
-
 ## Tech Stack
 
 - Next.js
@@ -54,7 +52,5 @@ $ yarn build
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 ## License
-
-</a><br />Content on [jagad.dev](https://jagad.dev) is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 
 Code licensed under the <a href="https://github.com/jagadyudha/jagad.dev/blob/main/LICENSE.md">MIT License</a>.
