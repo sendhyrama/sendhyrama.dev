@@ -1,0 +1,130 @@
+/* PrismJS 1.27.0
+https://prismjs.com/download.html#themes=prism-okaidia&languages=markup+css+clike+javascript */
+code[class*='language-'],
+pre[class*='language-'] {
+  @apply whitespace-pre md:whitespace-pre-wrap;
+  color: #f8f8f2;
+  background: 0 0;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-size: 0.97em;
+  text-align: left;
+  word-spacing: normal;
+  word-break: break-all;
+  line-height: 1.5;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+pre[class*='language-'] {
+  padding: 1em;
+  margin: 0.5em 0;
+  @apply overflow-auto xl:overflow-hidden;
+  border-radius: 0.3em;
+}
+:not(pre) > code[class*='language-'],
+pre[class*='language-'] {
+  background-color: #1a1a1c;
+}
+:not(pre) > code[class*='language-'] {
+  padding: 0.1em;
+  border-radius: 0.3em;
+  white-space: normal;
+}
+.token.cdata,
+.token.comment,
+.token.doctype,
+.token.prolog {
+  color: #8292a2;
+}
+.token.punctuation {
+  color: #f8f8f2;
+}
+.token.namespace {
+  opacity: 0.7;
+}
+.token.constant,
+.token.deleted,
+.token.property,
+.token.symbol,
+.token.tag {
+  color: #f92672;
+}
+.token.boolean,
+.token.number {
+  color: #ae81ff;
+}
+.token.attr-name,
+.token.builtin,
+.token.char,
+.token.inserted,
+.token.selector,
+.token.string {
+  color: #a6e22e;
+}
+.language-css .token.string,
+.style .token.string,
+.token.entity,
+.token.operator,
+.token.url,
+.token.variable {
+  color: #f8f8f2;
+}
+.token.atrule,
+.token.attr-value,
+.token.class-name,
+.token.function {
+  color: #e6db74;
+}
+.token.keyword {
+  color: #66d9ef;
+}
+.token.important,
+.token.regex {
+  color: #fd971f;
+}
+.token.bold,
+.token.important {
+  font-weight: 700;
+}
+.token.italic {
+  font-style: italic;
+}
+.token.entity {
+  cursor: help;
+}
+
+.code-highlight {
+  float: left; /* 1 */
+  min-width: 100%; /* 2 */
+}
+
+.code-line {
+  display: block;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: -16px;
+  margin-right: -16px;
+  border-left-width: 4px;
+  border-left-color: rgba(31, 41, 55, 0); /* Set code block color */
+}
+
+.code-line.inserted {
+  background-color: rgba(16, 185, 129, 0.2); /* Set inserted line (+) color */
+}
+
+.code-line.deleted {
+  background-color: rgba(239, 68, 68, 0.2); /* Set deleted line (-) color */
+}
+
+.highlight-line {
+  margin-left: -16px;
+  margin-right: -16px;
+  @apply bg-primary bg-opacity-10;
+  border-left-width: 4px;
+  border-left-color: #0ac5b3; /* Set highlight accent border color */
+}
