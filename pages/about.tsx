@@ -11,7 +11,7 @@ const About = () => {
   return (
     <>
       <NextSeo
-        title={`${title} — Jagad Yudha Awali`}
+        title={`${title} — Sendhy Ramadhinata`}
         description={`My professional background, key accomplishments, personal values, and any brands I may be associated with`}
         canonical={`${DataSeo.url}/about`}
       />
@@ -28,7 +28,7 @@ const About = () => {
           </p>
         </div>
 
-        <div className='relative float-left mr-4 h-36 w-1/2  object-cover md:w-1/3 lg:h-64 lg:w-1/4'>
+        {/* <div className='relative float-left mr-4 h-36 w-1/2  object-cover md:w-1/3 lg:h-64 lg:w-1/4'>
           <Image
             src={'/jagad.dev/me_p61sc3.png'}
             className='rounded-sm md:rounded-md'
@@ -37,18 +37,18 @@ const About = () => {
             objectPosition={'50% 30%'}
             alt={'Jagad Yudha Awali'}
           />
-        </div>
+        </div> */}
 
         <div>
           <p>
-            {`Hello! I'm Jagad Yudha Awali. I was born and raised in Sidoarjo,
+            {`Hi! I'm Sendhy Ramadhinata. I was born and raised in Surabaya,
                 Indonesia. I am currently working freelance as a front-end
                 developer while studying at the `}
             <a
               className='font-medium text-primary underline'
-              href='https://umsida.ac.id'
+              href='https://upnjatim.ac.id'
             >
-              University of Muhammadiyah Sidoarjo.
+              UPN Veteran Jawa Timur.
             </a>
           </p>
           <p className='text-md mb-5 '>
@@ -82,12 +82,12 @@ const About = () => {
             I think illiteracy will be defined as the inability to read
             programming languages.
           </p>
-          <p className='text-md '>
+          {/* <p className='text-md '>
             Aside from programming stuff, I enjoy playing simulation racing, —
             especially Formula 1, and began competing in the Indo Formula League
             and winning the{' '}
             <a href='https://youtu.be/jIm3e-iBWjc?t=3845'>France Grand Prix</a>.
-          </p>
+          </p> */}
           <p>
             Read more about my activities related to programming on{' '}
             <a
