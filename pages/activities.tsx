@@ -39,7 +39,7 @@ const Dashboard = ({
   return (
     <>
       <NextSeo
-        title={`${title} — Jagad Yudha Awali`}
+        title={`${title} — Sendhy Ramadhinata`}
         description={description}
         canonical={`${DataSeo.url}/activities`}
       />

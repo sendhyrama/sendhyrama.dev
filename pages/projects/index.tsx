@@ -46,7 +46,7 @@ const Projects = ({
   return (
     <main className='prose prose-invert mb-16 h-full max-w-none prose-a:no-underline sm:mb-32'>
       <NextSeo
-        title={`${title} — Jagad Yudha Awali`}
+        title={`${title} — Sendhy Ramadhinata`}
         description={description}
         canonical={`${DataSeo.url}/projects`}
       />

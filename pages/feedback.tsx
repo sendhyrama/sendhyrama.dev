@@ -56,7 +56,7 @@ const Feedback = () => {
               value={form.name}
               type='text'
               className='form-input my-4 w-full rounded-md bg-background text-gray-300'
-              placeholder='Ex. Jagad Yudha'
+              placeholder='Ex. Sendhy Ramadhinata'
               required
             />
           </div>

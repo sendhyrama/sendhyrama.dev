@@ -19,7 +19,7 @@ const Home = ({ posts }: InferGetStaticPropsType<typeof getStaticProps>) => {
         <div className='mx-auto max-w-4xl  text-center lg:max-w-md lg:text-left'>
           <h1 className='whitespace-pre-line text-3xl text-white xs:text-4xl sm:text-5xl'>
             {`Hey there! I'm\n`}{' '}
-            <span className='text-primary'>Jagad Yudha</span>
+            <span className='text-primary'>Sendhy Ramadhinata</span>
           </h1>
           <p className='text-md mb-10 text-gray-400'>
             I am a software engineer who specializes in front-end development
