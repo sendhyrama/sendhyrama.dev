@@ -24,7 +24,7 @@ const Home = ({ posts }: InferGetStaticPropsType<typeof getStaticProps>) => {
           <p className='text-md mb-10 text-gray-400'>
             I am a software engineer who specializes in front-end development
             for web and mobile applications. I also love to write code and share
-            my knowledge with others. 
+            my knowledge with others.
           </p>
           <div className='mb-10 space-x-2 md:mb-20 lg:mb-0'>
             <Link href={'/posts'} passHref>
