@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "astro": "^2.6.4"
+  }
+}
