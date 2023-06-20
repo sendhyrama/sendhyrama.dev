@@ -1,0 +1,51 @@
+---
+import { getCollection } from "astro:content";
+
+const projects = await getCollection("projects");
+---
+
+<div class="px-8 pt-16 text-neutral-900 dark:text-neutral-200">
+  <section
+    class="mx-auto my-4 w-full p-4 2xl:max-w-6xl 3xl:max-w-7xl"
+    id="projects"
+  >
+    <h2 class="animate-on-intersection text-2xl font-bold sm:text-3xl">
+      Projects
+    </h2>
+    <div class="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-2">
+      {
+        projects.map((project) => (
+          <a
+            href={`/projects/${project.slug}`}
+            class="flex flex-col overflow-hidden rounded-lg shadow-lg"
+          >
+            <div
+              class="h-48 w-full overflow-hidden transition-all duration-[8000ms] ease-in-out transform bg-cover bg-no-repeat hover:bg-bottom hover:bg-fixed"
+              style={{ backgroundImage: `url(${project.data.share.image})` }}
+            />
+
+            <div class="flex flex-1 flex-col justify-between bg-neutral-50 dark:bg-neutral-1000 p-6">
+              <div class="flex-1">
+                <div class="block">
+                  <h3 class="text-xl font-semibold text-neutral-900 dark:text-neutral-100">
+                    {project.data.title}
+                  </h3>
+                  <p class="mt-3 text-base text-neutral-700 dark:text-neutral-300">
+                    {project.data.description}
+                  </p>
+                </div>
+                <div class="mt-4 w-full flex gap-2 flex-wrap">
+                  {project.data.tools.map((tool) => (
+                    <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-yellow-100 text-yellow-800">
+                      {tool}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+</div>

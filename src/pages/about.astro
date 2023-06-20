@@ -1,0 +1,112 @@
+---
+import { Image } from "@astrojs/image/components";
+import aboutImg from "../images/about.webp";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="About Me" description="">
+  <main class="pageTop">
+    <div class="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:gap-y-12">
+      <div class="mt-6 mx-auto lg:mx-0 lg:pl-20">
+        <div class="max-w-xs px-2.5 lg:max-w-none">
+          <Image
+            src={aboutImg}
+            alt="about CDi"
+            width={800}
+            height={800}
+            class="w-auto h-4/5 aspect-square rotate-3 rounded-2xl bg-neutral-100 object-cover dark:bg-neutral-800"
+          />
+        </div>
+      </div>
+      <div class="lg:order-first lg:row-span-2">
+        <h1
+          class="text-4xl font-bold tracking-tight text-neutral-800 dark:text-neutral-100 sm:text-5xl"
+        >
+          About Me
+        </h1>
+        <p
+          class="mt-6 space-y-7 text-base text-neutral-700 dark:text-neutral-200"
+        >
+          Hello! I’m CDi, a web developer with a strong background in law. I
+          hold a Bachelor of Laws (LL.B.) from “Alexandru Ioan Cuza” University,
+          where I focused on national cybercrime law, and a Master of Law Degree
+          (LL.M.) in Criminal Sciences, where I delved into European cybercrime
+          law.
+        </p>
+        <h2
+          class="mt-6 text-2xl font-bold tracking-tight text-neutral-800 dark:text-neutral-100 sm:text-3xl"
+        >
+          My Journey to Web Development
+        </h2>
+        <p
+          class="mt-6 space-y-7 text-base text-neutral-700 dark:text-neutral-200"
+        >
+          My passion for technology and the digital world has been with me since
+          I was young, stemming from my fascination with PCs, strategy games,
+          and MMORPGs.
+        </p>
+        <p
+          class="mt-6 space-y-7 text-base text-neutral-700 dark:text-neutral-200"
+        >
+          This passion led me to explore web development through my role as a
+          marketing director for Asociatia Studentilor la Drept, where I
+          maintained their WordPress website. My curiosity grew stronger as I
+          experimented with WordPress and Shopify, eventually leading me to
+          attend a coding boot camp in 2022. It was there that I discovered and
+          fell in love with React.
+        </p>
+      </div>
+    </div>
+    <h2
+      class="mt-6 text-2xl font-bold tracking-tight text-neutral-800 dark:text-neutral-100 sm:text-3xl"
+    >
+      Personality and Work Style
+    </h2>
+    <p class="mt-6 space-y-7 text-base text-neutral-700 dark:text-neutral-200">
+      As an <a
+        href="https://www.16personalities.com/intj-personality"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-yellow-800 dark:text-yellow-500">INTJ (Architect)</a
+      > personality type, I bring a strategic mindset and strong analytical skills
+      to my work. I thrive in situations that require problem-solving, long-term
+      planning, and logical thinking. My independent nature and drive for competence
+      enable me to tackle challenges head-on and develop innovative solutions. This
+      unique combination of traits helps me excel in various projects, sparking creativity
+      and contributing effectively to team dynamics, making things happen together.
+    </p>
+    <h2
+      class="mt-6 text-2xl font-bold tracking-tight text-neutral-800 dark:text-neutral-100 sm:text-3xl"
+    >
+      Interests and Hobbies
+    </h2>
+    <p class="mt-6 space-y-7 text-base text-neutral-700 dark:text-neutral-200">
+      My interests outside web development include technology, privacy,
+      cybersecurity, and finance. I’m also an avid sports enthusiast,
+      particularly fond of football (soccer) and martial arts.
+    </p>
+    <h2
+      class="mt-6 text-2xl font-bold tracking-tight text-neutral-800 dark:text-neutral-100 sm:text-3xl"
+    >
+      Goals and Aspirations
+    </h2>
+    <p class="mt-6 space-y-7 text-base text-neutral-700 dark:text-neutral-200">
+      My short-term goals involve further improving my knowledge and expanding
+      my skills in web development. In the long run, I aspire to work on
+      impactful products that make a difference in society.
+    </p>
+    <h2
+      class="mt-6 text-2xl font-bold tracking-tight text-neutral-800 dark:text-neutral-100 sm:text-3xl"
+    >
+      Connect and Collaborate
+    </h2>
+    <p class="mt-6 space-y-7 text-base text-neutral-700 dark:text-neutral-200">
+      Feel free to explore my website and learn more about my journey, projects,
+      and the unique combination of skills I bring to the table as a web
+      developer with a law background. <a
+        href="/#contact"
+        class="text-yellow-800 dark:text-yellow-500">Let’s connect</a
+      > and create something unique together!
+    </p>
+  </main>
+</Layout>

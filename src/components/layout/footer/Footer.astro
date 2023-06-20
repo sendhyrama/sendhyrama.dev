@@ -1,0 +1,67 @@
+---
+import { Icon } from "astro-icon";
+
+import FooterItem from "./FooterItem.astro";
+import SocialLinks from "./SocialLinks.astro";
+---
+
+<footer
+  class="mt-auto w-full bg-neutral-100 p-4 dark:bg-neutral-1000 print:hidden sm:p-6 z-10"
+>
+  <hr
+    class="my-6 border-neutral-200 dark:border-neutral-700 sm:mx-auto lg:my-8"
+  />
+  <div class="md:flex md:justify-evenly">
+    {/* Logo */}
+    <div class="mb-6 md:mb-0">
+      <a href="/" class="flex items-center justify-center md:justify-start">
+        <span
+          class="font-squartiqa text-7xl animate-background-pan bg-[length:200%] bg-clip-text text-transparent bg-gradient-to-r from-red-500 via-yellow-500 to-red-500 whitespace-nowrap"
+        >
+          CDi</span
+        >
+      </a>
+    </div>
+
+    {/* Menu */}
+    <div class="grid grid-cols-2 gap-8 sm:grid-cols-3 sm:gap-6">
+      <div class="flex flex-col gap-4 capitalize">
+        <FooterItem href="/">Home</FooterItem>
+        <FooterItem href="/about">About</FooterItem>
+        <FooterItem href="/#projects">Projects</FooterItem>
+      </div>
+      <div class="flex flex-col gap-4 capitalize">
+        <FooterItem href="/#certificates">Certificates</FooterItem>
+        <FooterItem href="/stack">Stack</FooterItem>
+        <FooterItem href="/#contact">Contact</FooterItem>
+      </div>
+      <div class="flex flex-col gap-4 capitalize"></div>
+    </div>
+  </div>
+
+  <div class="pt-12 pb-8 sm:flex sm:items-center sm:justify-center">
+    <div class="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
+      <span class="self-center text-2xl text-neutral-900 dark:text-neutral-200">
+        Get in touch:
+      </span>
+      <SocialLinks href="https://github.com/DCi-dev" ariaLabel="github">
+        <Icon name="uiw:github" size="1.5em" />
+      </SocialLinks>
+      <SocialLinks
+        href="https://www.linkedin.com/in/dan-cristian-ilie/"
+        ariaLabel="linkedin"
+      >
+        <Icon name="simple-icons:linkedin" size="1.5em" />
+      </SocialLinks>
+      <SocialLinks
+        href="https://discord.com/users/CDi#4953"
+        ariaLabel="discord"
+      >
+        <Icon name="akar-icons:discord-fill" size="1.5em" />
+      </SocialLinks>
+      <SocialLinks href="mailto:contact@cdi.dev" ariaLabel="email">
+        <Icon name="mdi:email" size="1.5em" />
+      </SocialLinks>
+    </div>
+  </div>
+</footer>

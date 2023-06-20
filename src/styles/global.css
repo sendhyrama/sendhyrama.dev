@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fonts */
+@font-face {
+  font-family: "Squartiqa4FStrike";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/Squartiqa/Squartiqa4FStrike.woff) format("woff");
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  scroll-margin-top: 80px;
+}
+
+body,
+html {
+  overflow-x: hidden;
+  scroll-behavior: auto;
+}
+
+body::-webkit-scrollbar {
+  width: 6px;
+}
+
+html.light {
+  background-color: hsl(0, 0%, 88%);
+}
+html.dark {
+  background-color: hsl(0, 0%, 13%);
+}
+
+/* Adding Scroll Margin for top */
+@media screen and (max-width: 640px) {
+  * {
+    scroll-margin-top: 60px;
+  }
+  body::-webkit-scrollbar {
+    width: 2px;
+  }
+}
+
+pre::-webkit-scrollbar {
+  display: none;
+}
+
+body.dark {
+  background-color: hsl(0, 0%, 13%);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: hsl(0, 0%, 53%);
+}
+
+.dark::-webkit-scrollbar-thumb {
+  background-color: hsl(0, 0%, 91%);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.lock-scroll {
+  overflow: hidden !important;
+}
+
+@layer components {
+  .pageTop {
+    @apply relative mx-auto mt-11 mb-10 w-full max-w-6xl p-4 text-neutral-900 dark:text-neutral-200 md:mt-16 2xl:max-w-6xl 3xl:max-w-7xl;
+  }
+
+  /* Cards - START */
+  .cards:hover > .card::after {
+    opacity: 1;
+  }
+  .card:hover::before {
+    opacity: 1;
+  }
+
+  .card::before,
+  .card::after {
+    border-radius: inherit;
+    content: "";
+    height: 100%;
+    left: 0px;
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    transition: opacity 500ms;
+    width: 100%;
+  }
+
+  .card::before {
+    background: radial-gradient(
+      400px circle at var(--mouse-x) var(--mouse-y),
+      hsl(42, 87%, 55%, 0.5),
+      transparent 40%
+    ) !important;
+    z-index: 7;
+  }
+
+  .card::after {
+    background: radial-gradient(
+      200px circle at var(--mouse-x) var(--mouse-y),
+      hsl(44, 92%, 63%, 0.4),
+      transparent 40%
+    ) !important;
+    z-index: 5;
+  }
+
+  .card > .card-content {
+    background-color: inherit;
+    border-radius: inherit;
+    inset: 1px;
+    padding-bottom: 20px;
+    position: absolute;
+    z-index: 6;
+  }
+  /* Cards - END */
+
+  #blob {
+    translate: -50% -50%;
+  }
+}

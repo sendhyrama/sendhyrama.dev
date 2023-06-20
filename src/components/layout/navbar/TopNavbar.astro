@@ -1,0 +1,19 @@
+---
+import Hamburger from "./Hamburger.astro";
+import Logo from "./Logo.astro";
+import MobileNav from "./MobileNav.astro";
+import Nav from "./Nav.astro";
+import ThemeToggle from "./ThemeToggle.astro";
+---
+
+<header class="fixed w-full top-0 z-50">
+  <div
+    class="bg-neutral-100 dark:bg-neutral-1000 flex items-center justify-between px-4 py-2 text-neutral-1000 dark:text-neutral-100 print:hidden sm:mt-2 sm:py-2 sm:px-3 sm:max-w-2xl sm:mx-auto sm:rounded-full md:max-w-3xl lg:max-w-6xl dark:bg-opacity-70 backdrop-filter backdrop-blur-lg bg-opacity-40"
+  >
+    <Hamburger />
+    <MobileNav />
+    <Logo />
+    <Nav />
+    <ThemeToggle />
+  </div>
+</header>

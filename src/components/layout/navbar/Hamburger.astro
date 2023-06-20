@@ -1,0 +1,52 @@
+---
+---
+
+<style>
+  .menu-toggle {
+    overflow: hidden;
+  }
+
+  .menu-toggle .hamburger {
+    transition: translate 1s, rotate 1s;
+  }
+
+  .hamburgerOpen {
+    translate: 2px -2px;
+    rotate: 0.125turn;
+  }
+
+  .menu-toggle .line {
+    transition: 1s;
+    stroke-dasharray: 60 31 60 300;
+  }
+
+  .hamburgerOpen .line {
+    stroke-dasharray: 60 105 60 300;
+    stroke-dashoffset: -90;
+  }
+</style>
+
+<button
+  id="hamburgerButton"
+  style={{ zIndex: 1000 }}
+  class="sm:hidden menu-toggle overflow-hidden text-neutral-1000 dark:text-neutral-100"
+  aria-controls="primary-navigation"
+  aria-expanded="false"
+  aria-label="Open menu"
+>
+  <svg
+    stroke="currentColor"
+    fill="none"
+    class="hamburger h-8 w-8 text-neutral-1000 dark:text-neutral-100"
+    viewBox="-10 -10 120 120"
+  >
+    <path
+      class="line text-neutral-1000 dark:text-neutral-100"
+      stroke-width="10"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      d="m 20 40 h 60 a 1 1 0 0 1 0 20 h -60 a 1 1 0 0 1 0 -40 h 30 v 70"
+    >
+    </path>
+  </svg>
+</button>
