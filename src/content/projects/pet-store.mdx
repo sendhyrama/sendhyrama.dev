@@ -1,0 +1,191 @@
+---
+
+draft: false
+title: Pet Store
+description: Full-stack e-commerce website
+slug: pet-store
+tools: 
+- Typescript
+- NextJs
+- Zod
+- tRPC
+- Stripe
+- Tailwind
+- Prisma
+- NextAuth
+- Sanity CMS
+
+share:
+  image: images/projects/pet-store/full-page.webp
+  title: Pet Store Project
+  description: Full-stack e-commerce website
+  
+---
+import { Icon } from "astro-icon";
+import main from "@/images/projects/pet-store/main.webp"
+import homePage from "@/images/projects/pet-store/home-page.webp"
+import productPage from "@/images/projects/pet-store/product-page.webp"
+import wishlistPage from "@/images/projects/pet-store/wishlist-page.webp"
+import cartPage from "@/images/projects/pet-store/cart-page.webp"
+import checkoutPage from "@/images/projects/pet-store/checkout-page.webp"
+import orderPage from "@/images/projects/pet-store/order-page.webp"
+import ProjectsHero from "@/components/ProjectsHero.astro"
+import ProjectCarousel from "@/components/ProjectCarousel.astro"
+
+export const shortDesc = "Full-stack e-commerce website built using modern technologies."
+
+export const description = "Customers, both users and guests, can easily browse, add to their wishlist, add to their cart and purchase products."
+
+export const tools = ["Typescript", "NextJs", "Zod", "tRPC", "Stripe", "Tailwind", "Prisma", "NextAuth", "Sanity CMS"]
+
+export const data = {
+  image: main,
+  type: "Ecommerce website",
+  title: "Pet Store",
+  shortDesc: shortDesc,
+  description: description,
+  links: {
+    github: "https://github.com/DCi-dev/t3-pet-store",
+  website: "https://pet-store.cdi.dev/",
+  },
+  tools: tools,
+}
+
+export const slidesData = {
+  slides: [
+    {
+      image: homePage,
+      title: "Home Page",
+    },
+    {
+      image: productPage,
+      title: "Product page",
+    },
+    {
+      image: wishlistPage,
+      title: "Wishlist page",
+    },
+    {
+      image: cartPage,
+      title: "Cart page",
+    },
+    {
+      image: checkoutPage,
+      title: "Checkout page",
+    },
+    {
+      image: orderPage,
+      title: "Order page",
+    },
+  ]
+}
+
+<ProjectsHero props={data} />
+
+<div class="w-full space-y-8 bg-neutral-50 dark:bg-neutral-1000">
+<div class="w-full max-w-6xl mx-auto prose dark:prose-invert px-6 md:px-4 xl:px-0">
+
+## Table of Contents
+
+- [Purpose and goals](#purpose-and-goals)
+- [Web stack and Explanation](#web-stack-and-explanation)
+- [Problems and Thought Process](#problems-and-thought-process)
+- [Lessons Learned](#lessons-learned)
+- [Features](#features)
+- [Screenshots](#screenshots)
+
+
+## <Icon name="carbon:idea" class="-ml-0.5 mr-2 h-10 w-10 inline-block" />Purpose and goals
+
+
+The Pet Store project was a personal project I embarked on to expand my knowledge in full-stack web development and challenge myself to build something fun yet complex using modern web technologies.
+
+My primary goal for this project was to create a robust e-commerce website with a wide range of pet-related products and provide users with a seamless shopping experience.
+
+In particular, I was interested in exploring and learning about these modern web technologies and their capabilities. By building something that isn't yet covered by a tutorial or pre-existing project, I was able to challenge myself and put my skills to the test.
+
+As a developer, the best way to learn and grow is through experimentation and practice, and that's what this project was all about. I wanted to build something fun and complex, to push myself beyond my comfort zone and expand my knowledge and skillset in web development.
+
+## <Icon name="mdi:stack-overflow" class="-ml-0.5 mr-2 h-10 w-10 inline-block" />Web stack and Explanation
+
+### NextJs and Sanity CMS
+
+NextJs made the most sense for the web application because it is a React framework built for production. It is also effortless to use and has many features that make creating a good user experience easy, with SEO and speed in mind, as it can be used to create static and server-side rendered pages.
+
+For the CMS, I chose Sanity because it is a headless CMS that is easy to use and has excellent developer experience. It also has a great API that makes it easy to integrate with NextJs. It's also a perfect choice for clients wanting to modify their products without complex coding knowledge.
+
+### NextAuth and Stripe
+
+In addition, Pet Store is built with security in mind. I used NextAuth for authentication to ensure user information is kept safe and secure and Stripe for payment processing to provide customers with a reliable and secure payment gateway.
+
+### TRPC, Zod, and Prisma
+
+Behind the scenes, I used TRPC for type-safe server-side requests and Zod for data validation, creating clean, maintainable, and bug-free code. I utilized Prisma for handling database queries, making it easy to scale the website if it needes to grow.
+
+### Tanstack React Query and TailwindCSS
+
+To handle complex data and state management, I implemented React Query. To make design customization and prototyping easier, I used TailwindCSS.
+
+### Custom Context
+
+I also created a custom context to handle the cart and wishlist. This context stores the cart and wishlist data in local storage so the user can access their cart and wishlist even if they close the browser.
+
+The context also calls any database queries needed to update the cart and wishlist. Ensuring that the cart and the wishlist are always up to date in the database and local storage.
+
+It also takes into account if the user has logged in or is simply a guest, with the difference that the guest will only have their lists stored in the local storage.
+
+
+## <Icon name="mdi:tools" class="-ml-0.5 mr-2 h-10 w-10 inline-block" />Problems and Thought Process
+
+One of the primary challenges I faced with the Pet Store project was that the stack of technologies used for the project was new to me. I had to conduct extensive research and study the individual documentation for each technology to understand how they worked and how to best utilize them.
+
+Another significant challenge was building a custom Context with complex logic to handle cases for authenticated and guest users. The purpose of this Context was to ensure that the user's cart and wishlist data could be stored in local storage and kept in sync with the database (for authenticated users). This required a lot of thought and planning, as well as a deep understanding of the various technologies involved.
+
+Finally, another challenge was working with the Stripe SDK. The Stripe API docs were extensive, and I had to spend a lot of time understanding how to combine data to create a detailed orders page. Despite the challenges, I was determined to ensure that the payment system was reliable, secure, and easy to use for customers.
+
+Overall, the Pet Store project was a significant challenge for me as a developer. Still, it also provided a valuable opportunity to expand my knowledge and skill set.
+
+Through extensive research, planning, and trial and error, I built an e-commerce website that helped me develop my ability to design and build complex web applications using modern web technologies.
+
+## <Icon name="mdi:book-open-page-variant-outline" class="-ml-0.5 mr-2 h-10 w-10 inline-block" />Lessons Learned
+
+One of the most important lessons was careful planning and organization. By breaking the project down into smaller, more manageable tasks and creating a roadmap for development, I was able to work more efficiently and stay on track.
+
+Another important lesson was the value of taking the time to research and understand new technologies thoroughly. This was particularly relevant in the case of the Stripe integration, which I had never worked with before. By carefully studying the Stripe API documentation, I was able to integrate it successfully into the website and create a reliable and secure payment gateway for customers.
+
+I also learned a lot through building the custom Context for the website. The Context needed to handle complex logic to keep the user's cart and wishlist data in sync with the database and local storage without any user interaction, except when signing in. I created a more intuitive and seamless user shopping experience by carefully planning and implementing this functionality.
+
+In addition, I had to integrate the Sanity CMS with the website database to ensure that the orders could display the correct product and details. This required a lot of thought and planning to ensure that the integration was seamless and efficient. Through this process, I learned the importance of building for both the end user and for future maintenance and how to design and build with both in mind.
+
+Overall, the Pet Store project was an excellent learning experience for me as a web developer. It provided me with valuable opportunities to expand my knowledge and skill set. The lessons I learned through this project will serve me well in future projects and endeavours.
+
+
+## <Icon name="mdi:feature-highlight" class="-ml-0.5 mr-2 h-10 w-10 inline-block" />Features
+<div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+<div>
+- User registration
+- User authentication
+- User/Guest orders
+- User/Guest cart
+- User/Guest wishlist
+</div>
+<div>
+- Stripe payment gateway
+- Product filtering
+- Product categories
+</div>
+<div>
+- Product images
+- Product variants
+- Product quantity
+- Product price
+- Product description
+</div>
+</div>
+
+## <Icon name="mdi:camera" class="-ml-0.5 mr-2 h-10 w-10 inline-block" />Screenshots
+
+<ProjectCarousel props={slidesData} />
+
+</div>
+</div>

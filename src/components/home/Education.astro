@@ -1,0 +1,71 @@
+---
+import { Image } from "@astrojs/image/components";
+
+import upnjatim from "../../images/upnjatim.png";
+import sman4sby from "../../images/sman4sby.png";
+---
+
+<div class="px-8 pt-16 text-neutral-900 dark:text-neutral-200">
+  <section
+    class="mx-auto my-4 w-full p-4 2xl:max-w-6xl 3xl:max-w-7xl"
+    id="education"
+  >
+    <h2 class="animate-on-intersection text-2xl font-bold sm:text-3xl">
+      Education
+    </h2>
+    <div class="grid gap-10 lg:mb-16 mt-8 grid-cols-1 lg:grid-cols-2">
+      <div
+        class="justify-start items-center gap-6 bg-neutral-100 rounded-lg shadow sm:flex p-8 dark:bg-neutral-1000 dark:border-neutral-700"
+      >
+        <Image
+          src={upnjatim}
+          alt="UPN Veteran Jawa Timur"
+          format="png"
+          width={294}
+          height={288}
+          quality={100}
+          class="w-36 h-36 mb-6 mx-auto sm:mx-0 sm:mb-0"
+        />
+        <div class="flex flex-col justify-center items-start">
+          <h3
+            class="mb-4 text-2xl font-bold tracking-tight text-neutral-900 dark:text-neutral-100"
+          >
+            Bachelor's Degree, Information System
+          </h3>
+          <p class="text-neutral-700 dark:text-neutral-400 mb-4">
+            UPN "Veteran" Jawa Timur
+          </p>
+          <p class="text-neutral-800 dark:text-neutral-200 text-lg">
+            <span class="font-bold">2020 - 2024</span>
+          </p>
+        </div>
+      </div>
+      <div
+        class="justify-start items-center gap-6 bg-neutral-100 rounded-lg shadow sm:flex p-8 dark:bg-neutral-1000 dark:border-neutral-700"
+      >
+        <Image
+          src={sman4sby}
+          alt="SMAN 4 Surabaya"
+          format="png"
+          width={294}
+          height={288}
+          quality={100}
+          class="w-36 h-36 mb-6 mx-auto sm:mx-0 sm:mb-0"
+        />
+        <div class="flex flex-col justify-center items-start">
+          <h3
+            class="mb-2 text-2xl font-bold tracking-tight text-neutral-900 dark:text-neutral-100"
+          >
+            Majored in Math & Natural Sciences
+          </h3>
+          <p class="text-neutral-700 dark:text-neutral-400 mb-4">
+            SMA Negeri 4 Surabaya
+          </p>
+          <p class="text-neutral-800 dark:text-neutral-200 text-lg">
+            <span class="font-bold">2017 - 2020</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

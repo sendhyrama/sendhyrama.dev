@@ -1,0 +1,166 @@
+---
+---
+
+<form
+  method="POST"
+  class="mx-auto relative flex w-full max-w-xl flex-col items-center dark:text-neutral-300"
+>
+  <p
+    class="px-4 py-11 text-center font-bold text-2xl text-slate-600 dark:text-neutral-300"
+  >
+    Or you can send me a good ol&apos; fashioned email if you want.
+  </p>
+  <div class="grid w-full grid-cols-2 gap-6">
+    <div class="group relative z-0 mb-6 w-full">
+      <input
+        type="text"
+        name="firstName"
+        id="firstName"
+        class="peer mt-2 block w-full appearance-none border-0 border-b-2 border-neutral-300 bg-transparent py-2 px-1 text-sm text-neutral-900 focus:border-neutral-1000 focus:outline-none focus:ring-0 dark:border-neutral-600 dark:text-neutral-100 dark:focus:border-neutral-100"
+        placeholder=" "
+        required
+        minlength="1"
+        maxlength="50"
+      />
+      <label
+        for="firstName"
+        class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-neutral-600 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:font-bold peer-focus:text-neutral-1000 dark:text-neutral-400 dark:peer-focus:text-neutral-100"
+      >
+        First name
+      </label>
+    </div>
+    <div class="group relative z-0 mb-6 w-full">
+      <input
+        type="text"
+        name="lastName"
+        id="lastName"
+        class="peer mt-2 block w-full appearance-none border-0 border-b-2 border-neutral-300 bg-transparent py-2 px-1 text-sm text-neutral-900 focus:border-neutral-1000 focus:outline-none focus:ring-0 dark:border-neutral-600 dark:text-neutral-100 dark:focus:border-neutral-100"
+        placeholder=" "
+        required
+        minlength="1"
+        maxlength="50"
+      />
+      <label
+        for="lastName"
+        class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-neutral-600 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:font-bold peer-focus:text-neutral-1000 dark:text-neutral-400 dark:peer-focus:text-neutral-100"
+      >
+        Last name
+      </label>
+    </div>
+  </div>
+  <div class="group relative z-0 mb-6 w-full">
+    <input
+      type="email"
+      name="email"
+      id="email"
+      class="peer mt-2 block w-full appearance-none border-0 border-b-2 border-neutral-300 bg-transparent py-2 px-1 text-sm text-neutral-900 focus:border-black focus:outline-none focus:ring-0 dark:border-neutral-600 dark:text-neutral-100 focus:dark:border-neutral-100"
+      placeholder=" "
+      required
+    />
+    <label
+      for="email"
+      class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-neutral-600 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:font-bold peer-focus:text-neutral-1000 dark:text-neutral-400 dark:peer-focus:text-neutral-100"
+    >
+      Email address
+    </label>
+  </div>
+  <div class="group relative z-0 mb-6 w-full">
+    <input
+      type="text"
+      name="subject"
+      id="subject"
+      class="peer mt-2 block w-full appearance-none border-0 border-b-2 border-neutral-300 bg-transparent py-2 px-1 text-sm text-neutral-900 focus:border-neutral-1000 focus:outline-none focus:ring-0 dark:border-neutral-600 dark:text-neutral-100 dark:focus:border-neutral-100"
+      placeholder=" "
+      required
+      minlength="2"
+      maxlength="50"
+    />
+    <label
+      for="subject"
+      class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-neutral-600 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:font-bold peer-focus:text-neutral-1000 dark:text-neutral-400 dark:peer-focus:text-neutral-100"
+    >
+      Subject
+    </label>
+  </div>
+  <div class="group relative z-0 mb-6 w-full">
+    <textarea
+      name="message"
+      id="message"
+      class="peer mt-2 block min-h-[100px] w-full resize-y appearance-none border-0 border-b-2 border-neutral-300 bg-transparent py-2 px-1 text-sm text-neutral-900 focus:border-neutral-1000 focus:outline-none focus:ring-0 dark:border-neutral-600 dark:text-neutral-100 dark:focus:border-neutral-100"
+      placeholder=" "
+      required
+      minlength="3"
+      maxlength="500"></textarea>
+    <label
+      for="message"
+      class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-neutral-600 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:font-bold peer-focus:text-neutral-1000 dark:text-neutral-400 dark:peer-focus:text-neutral-100"
+    >
+      Message
+    </label>
+  </div>
+
+  <div class="contact-button w-full overflow-hidden rounded-lg sm:max-w-sm">
+    <div class="flex w-full justify-center">
+      <button
+        id="contact-button"
+        type="submit"
+        class="relative w-full overflow-hidden rounded-lg bg-primary-600 px-4 py-3 text-center text-sm font-bold text-neutral-100 outline-none transition duration-300 active:scale-95"
+      >
+        <div class="relative flex w-full items-center justify-center">
+          <p class="text-md font-bold text-neutral-1000 md:text-lg">Send</p>
+        </div>
+      </button>
+    </div>
+  </div>
+</form>
+
+<script>
+  import { showToast } from "@/scripts/toast";
+
+  const form = document.querySelector("form");
+  const contactButton = document.getElementById(
+    "contact-button"
+  ) as HTMLButtonElement;
+
+  function clearForm() {
+    form!.reset();
+  }
+
+  function toggleButton(disabled: boolean, text: string | null) {
+    contactButton!.disabled = disabled;
+    contactButton!.querySelector("p")!.textContent = text;
+  }
+
+  form?.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    toggleButton(true, "Sending...");
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch("/api/sendgrid", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          firstName: formData.get("firstName"),
+          lastName: formData.get("lastName"),
+          email: formData.get("email"),
+          subject: formData.get("subject"),
+          message: formData.get("message"),
+        }),
+      });
+
+      if (response.ok) {
+        showToast("Message sent!", "success", 3000);
+        clearForm();
+      } else {
+        showToast("Failed to send message", "fail", 3000);
+      }
+    } catch (error) {
+      showToast("Something went wrong. Please try again.", "fail", 3000);
+    } finally {
+      toggleButton(false, "Send");
+    }
+  });
+</script>

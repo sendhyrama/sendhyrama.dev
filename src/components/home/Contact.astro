@@ -1,0 +1,43 @@
+---
+import ContactForm from "@/components/ContactForm.astro";
+import socialLinks from "@/data/socialMedia";
+import Cards from "@components/Cards.astro";
+
+const socials = socialLinks.data.slice(0, 3);
+const socialData = {
+  title: "Socials",
+  data: socials,
+};
+const itemsNumber = "grid-cols-3 mx-5";
+---
+
+<div
+  class="mx-auto py-8 w-full p-4 text-neutral-900 dark:text-neutral-200 2xl:max-w-6xl 3xl:max-w-7xl"
+>
+  <section
+    class="min-h-screen py-12 justify-center items-center lg:flex gap-8"
+    id="contact"
+  >
+    {/* Get in touch top section */}
+    <div class="w-full pt-6 text-center">
+      <div class="text-6xl font-bold text-neutral-900 dark:text-neutral-100">
+        <h2 class="animate-on-intersection">Get in touch</h2>
+      </div>
+      <div class="px-4 py-7 text-lg text-neutral-800 dark:text-neutral-300">
+        <p>
+          Do you have any questions, concerns <br />or just want to say Hi 🙋‍♂️?
+        </p>
+        <p>Here are the easiest ways to contact me!</p>
+      </div>
+      <div class="mx-auto max-w-lg text-center">
+        <Cards props={socialData} display={itemsNumber} />
+      </div>
+    </div>
+
+    <div class="mx-auto w-full px-2 dark:text-neutral-100 lg:pb-10">
+      <div class="mx-auto mt-4 w-full px-8">
+        <ContactForm />
+      </div>
+    </div>
+  </section>
+</div>
