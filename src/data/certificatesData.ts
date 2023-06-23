@@ -8,6 +8,9 @@ import jjs from "../images/org/just-javascript.webp";
 import microsoft from "../images/org/microsoft.webp";
 import triplebyte from "../images/org/triplebyte.webp";
 import udemy from "../images/org/udemy.webp";
+import dicoding from "../images/org/dicoding.jpeg";
+import skilvul from "../images/org/skilvul.png";
+import coursera from "../images/org/coursera.png";
 
 /* Organizations */
 
@@ -36,52 +39,107 @@ const JustJavaScript: Org = {
   logo: jjs,
 };
 
+const Dicoding: Org = {
+  name: "Dicoding",
+  logo: dicoding,
+};
+
+const Skilvul: Org = {
+  name: "Skilvul",
+  logo: skilvul,
+};
+
+const Coursera: Org = {
+  name: "Coursera",
+  logo: coursera,
+};
+
 const certificatesData = [
   {
-    title: "Just Javascript - by Dan Abramov",
-    issuedDate: "Nov, 2022",
-    issuedBy: JustJavaScript,
-    url: "/assets/certificates/just-javascript.pdf",
+    title: "System Administration and IT Infrastructure Services",
+    issuedDate: "Mar, 2023",
+    issuedBy: Coursera,
+    url: "https://coursera.org/share/971a82568c1543bb26c063129c6b8cee",
 
     pinned: true,
   },
   {
-    title: "The Complete Web Developer in 2022",
-    issuedDate: "Sept, 2022",
-    issuedBy: Udemy,
-    url: "https://www.udemy.com/certificate/UC-56610012-bf1a-4eda-873b-64f86d36bd78/",
+    title: "The Bits and Bytes of Computer Networking",
+    issuedDate: "Mar, 2023",
+    issuedBy: Coursera,
+    url: "https://coursera.org/share/65860c4451453dcf29c1e775a47210ff",
 
     pinned: true,
   },
   {
-    title: "JavaScript Algorithms and Data Structures",
-    issuedDate: "Aug, 2022",
-    issuedBy: freeCodeCamp,
-    url: "https://freecodecamp.org/certification/CDi/javascript-algorithms-and-data-structures",
+    title: "Menjadi Google Cloud Engineer",
+    issuedDate: "May, 2023",
+    issuedBy: Dicoding,
+    url: "https://www.dicoding.com/certificates/2VX3JY96QPYQ",
 
     pinned: true,
   },
   {
-    title: "Responsive Web Design",
-    issuedDate: "Aug, 2022",
-    issuedBy: freeCodeCamp,
-    url: "https://freecodecamp.org/certification/CDi/responsive-web-design",
+    title: "Belajar Dasar Pemrograman JavaScript",
+    issuedDate: "Mar, 2023",
+    issuedBy: Dicoding,
+    url: "https://www.dicoding.com/certificates/MRZM405N3XYQ",
 
     pinned: true,
   },
   {
-    title: "MTA: Introduction to Programming Using JavaScript",
-    issuedDate: "June, 2022",
-    issuedBy: Microsoft,
-    url: "https://www.credly.com/badges/a37551fc-8bc5-4712-9442-8696b0401c32",
+    title: "Belajar Dasar Pemrograman Web",
+    issuedDate: "Mar, 2023",
+    issuedBy: Dicoding,
+    url: "https://www.dicoding.com/certificates/QLZ925OJ2X5D",
 
     pinned: true,
   },
   {
-    title: "MTA: Introduction to Programming Using HTML and CSS",
-    issuedDate: "May, 2022",
-    issuedBy: Microsoft,
-    url: "https://www.credly.com/badges/7c2ee275-1089-4c2e-8f45-39f3fd1eced2",
+    title: "Belajar Membuat Aplikasi Back-End untuk Pemula dengan Google Cloud",
+    issuedDate: "Mar, 2023",
+    issuedBy: Dicoding,
+    url: "https://www.dicoding.com/certificates/N9ZO4GNKDZG5",
+
+    pinned: true,
+  },
+  {
+    title: "Belajar Dasar Git dengan GitHub",
+    issuedDate: "Feb, 2023",
+    issuedBy: Dicoding,
+    url: "https://www.dicoding.com/certificates/JLX1LEM32X72",
+
+    pinned: true,
+  },
+  {
+    title: "Memulai Dasar Pemrograman untuk Menjadi Pengembang Software",
+    issuedDate: "Feb, 2023",
+    issuedBy: Dicoding,
+    url: "https://www.dicoding.com/certificates/81P28J07OPOY",
+
+    pinned: true,
+  },
+  {
+    title: "Pengenalan ke Logika Pemrograman (Programming Logic 101)",
+    issuedDate: "Feb, 2023",
+    issuedBy: Dicoding,
+    url: "https://www.dicoding.com/certificates/1OP85E942PQK",
+
+    pinned: true,
+  },
+  {
+    title: "Krealogi: UI/UX Challenge (Completion)",
+    issuedDate: "Dec, 2022",
+    issuedBy: Skilvul,
+    url: "https://badgr.com/public/assertions/YWI6DX1VT6qw3xfBY2NiFg?identity__email=sendhyrama@gmail.com",
+
+    pinned: true,
+  },
+  {
+    title: "UI/UX Design Mastery",
+    issuedDate: "Oct, 2022",
+    issuedBy: Skilvul,
+    url: "https://badgr.com/public/assertions/GeyDY4DQTbO0k6aSy1EKIw?identity__email=sendhyrama@gmail.com",
     pinned: true,
   },
 ];
