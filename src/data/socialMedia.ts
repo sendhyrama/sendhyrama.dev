@@ -22,6 +22,24 @@ const socialLinks: Social = {
       url: "https://discord.com/users/831460811847106581",
     },
     {
+      name: "Instagram",
+      icon: "simple-icons:instagram",
+      description: "My Instagram",
+      url: "https://instagram.com/sendhyrama",
+    },
+    {
+      name: "Twitter",
+      icon: "simple-icons:twitter",
+      description: "My Twitter",
+      url: "https://twitter.com/sendhyrama",
+    },
+    {
+      name: "DEV",
+      icon: "simple-icons:devto",
+      description: "My Devto page",
+      url: "https://dev.to/sendhyrama",
+    },
+    {
       name: "Email",
       icon: "material-symbols:mail-rounded",
       description: "My Email address",
