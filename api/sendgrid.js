@@ -5,8 +5,8 @@ sendgrid.setApiKey(process.env.PUBLIC_SENDGRID_API_KEY);
 async function sendEmail(req, res) {
   try {
     await sendgrid.send({
-      to: "contact@cdi.dev",
-      from: "contact@cdi.dev",
+      to: "sendhyrama@gmail.com",
+      from: "sendhyrama@gmail.com",
       subject: `[Lead from website] : ${req.body.subject}`,
       html: `<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
@@ -24,8 +24,8 @@ async function sendEmail(req, res) {
   <meta name="x-apple-disable-message-reformatting">
   <!--[if !mso]><!--><meta http-equiv="X-UA-Compatible" content="IE=edge"><!--<![endif]-->
   <title>Contact Form</title>
-        <meta name="description" content="Contact Form - cdi.dev">
-        <meta name="author" content="cdi.dev">
+        <meta name="description" content="Contact Form - sendhyrama.dev">
+        <meta name="author" content="sendhyrama.dev">
   
     <style type="text/css">
       @media only screen and (min-width: 520px) {
