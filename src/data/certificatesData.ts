@@ -11,6 +11,7 @@ import udemy from "../images/org/udemy.webp";
 import dicoding from "../images/org/dicoding.jpeg";
 import skilvul from "../images/org/skilvul.png";
 import coursera from "../images/org/coursera.png";
+import bangkit from "../images/org/bangkit.jpg";
 
 /* Organizations */
 
@@ -54,7 +55,20 @@ const Coursera: Org = {
   logo: coursera,
 };
 
+const Bangkit: Org = {
+  name: "Bangkit Academy",
+  logo: bangkit,
+};
+
 const certificatesData = [
+  {
+    title: "Cloud Computing Path at Bangkit Academy 2023 (Completion)",
+    issuedDate: "July, 2023",
+    issuedBy: Bangkit,
+    url: "https://doc-14-c0-docs.googleusercontent.com/docs/securesc/sr5d1sr6knra8tmme4r1kbo7legpc8k6/sojip9fqqdl2pc06k9uldat9k2tvagsi/1690689750000/12536267041218139854/14292743530266427263/1BAuiuQ4VcGBRP94y9-QCNj5rMR7Wn76Q?e=view&ax=AGtFMPVeOJBdIpPr5fQ0iycn8tuPKf7BNMicBTAo1rtbaDdZkecKCfMfoVxOIs4yYWfQ1LOcIx8xl2PAVwyJolASwCUDc68XCzMF3ORkCUACZNwmJT1hvrp2DrFZ_d0ZzOTZJVbrkQrP0KqJVe-Lwj4P92XI2uudI7EykqIF1N9WXz14IwKnIUee0YEgyQ39T1kFO5JQUyaaiooVCD-B7Qs362zsYJQUpHqcE_GOaiEqsxS20rWVKOwoFUVp7VV1NTHpDJAXmK-pdfK_5zALG45SD2hOT5IG0vCmLmKMF9SMNQI3n3uVCESz4VCsHGcYPutUC09AA1MEiPV6-lTV-DrCV8McgrkQdPpVxQGqbm4A0UyrDB_EP5UA6Nh7w1YDMezveyWdhA74oqhAUqRm52QfW_no8XgAPK3uLsAYJiwcwMAeTS348-GMY-RsSuoVb_UFBVpNTQkt86SxWU_Ru6EcyW7hCZlYSoa0gfpTgnMkhOIFLteaGe1K_MraG8vLzS9nFONBQoB7hISbqhN8xtof2ZnqGYmJ249raAv2SI5KsMRlXERrCHcAWOAEOMUpU4cSZDw51IgvGq8LWnMHih_R_b80172fKTNHohdZT9z_X0yw66hov_xw8Yw7V4JX6IdZey7aUX3vvqW7MAdlvPLQn5npKzVlHv10vg6syvRDP4QG-kmy1xfvEW5XcexRT9KaswHcjZftZZjnfODQDQDa7xKhg5A9d3I1_xm-38i0EA6W0qdi-2jhS4ZfQwboQsjwPPhJDeueXUVJ67ZLkIs9sw5LBuHNFMwa9_kmQRUhI865Myca5pgrhLSrPuLGgZYd-ne78al6UGgF4juOULmnkM-Iug5DBZTDxJ7CREXnRDW-en3ecjJjfBLme6O_zfWAf8fJMWPlpWBm4mnqqv0i-jF6pT3zgC6vkTQfR5CYPf5rRilEnJwjhiDoagryNh9dKeNRAg&uuid=da0a359b-ed85-4904-aeea-1428281962ea&authuser=0&nonce=213imogmfteh0&user=14292743530266427263&hash=l5fsi933u54m77dqk5c6h9esuri4vif9",
+    
+    pinned: true,
+  },
   {
     title: "System Administration and IT Infrastructure Services",
     issuedDate: "Mar, 2023",
