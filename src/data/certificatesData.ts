@@ -86,6 +86,22 @@ const certificatesData = [
     pinned: true,
   },
   {
+    title: "Belajar Dasar-Dasar DevOps",
+    issuedDate: "July, 2023",
+    issuedBy: Dicoding,
+    url: "https://www.dicoding.com/certificates/NVP7OEG1VPR0",
+
+    pinned: true,
+  },
+  {
+    title: "Belajar Jaringan Komputer untuk Pemula",
+    issuedDate: "July, 2023",
+    issuedBy: Dicoding,
+    url: "https://www.dicoding.com/certificates/NVP7OEG6OPR0",
+
+    pinned: true,
+  },
+  {
     title: "Menjadi Google Cloud Engineer",
     issuedDate: "May, 2023",
     issuedBy: Dicoding,
