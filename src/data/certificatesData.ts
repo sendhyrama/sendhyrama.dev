@@ -62,7 +62,7 @@ const Bangkit: Org = {
 
 const certificatesData = [
   {
-    title: "Cloud Computing Path at Bangkit Academy 2023 (Completion)",
+    title: "Cloud Computing Learning Path (Distinction Graduate)",
     issuedDate: "July, 2023",
     issuedBy: Bangkit,
     url: "/bangkit-certificate.pdf",
