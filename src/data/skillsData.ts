@@ -25,13 +25,6 @@ const skills: Skill = {
       url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
     },
     {
-      name: "TypeScript",
-      icon: "simple-icons:typescript",
-      description:
-        "TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.",
-      url: "https://www.typescriptlang.org/",
-    },
-    {
       name: "React",
       icon: "mdi:react",
       description:
@@ -46,18 +39,11 @@ const skills: Skill = {
       url: "https://nextjs.org/",
     },
     {
-      name: "Git",
-      icon: "mdi:git",
+      name: "Astro",
+      icon: "simple-icons:astro",
       description:
-        "Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.",
-      url: "https://git-scm.com/",
-    },
-    {
-      name: "GitHub",
-      icon: "uiw:github",
-      description:
-        "GitHub is a web-based hosting service for version control using Git. It is mostly used for computer code. It offers all of the distributed version control and source code management functionality of Git as well as adding its own features.",
-      url: "https://github.com/",
+        "Astro is a new kind of static site generator. It’s a compiler for the future of the web.",
+      url: "https://astro.build/",
     },
     {
       name: "TailwindCSS",
@@ -67,20 +53,6 @@ const skills: Skill = {
       url: "https://tailwindcss.com/",
     },
     {
-      name: "tRPC",
-      icon: "trpc",
-      description:
-        "tRPC is full-stack type-safe data fetching for React. It's a React Query alternative for defining your APIs in a single place.",
-      url: "https://trpc.io/",
-    },
-    {
-      name: "React Query",
-      icon: "react-query",
-      description:
-        "React Query is a library for fetching, caching and updating asynchronous data in React.",
-      url: "https://react-query.tanstack.com/",
-    },
-    {
       name: "Redux",
       icon: "simple-icons:redux",
       description:
@@ -88,25 +60,53 @@ const skills: Skill = {
       url: "https://redux.js.org/",
     },
     {
-      name: "Zod",
-      icon: "zod",
-      description:
-        "Zod is a TypeScript-first schema builder for static type checking.",
-      url: "https://zod.dev/",
-    },
-    {
-      name: "Astro",
-      icon: "simple-icons:astro",
-      description:
-        "Astro is a new kind of static site generator. It’s a compiler for the future of the web.",
-      url: "https://astro.build/",
-    },
-    {
       name: "Prisma",
       icon: "simple-icons:prisma",
       description:
         "Prisma is an open-source database toolkit. It is used to query, migrate and model databases with TypeScript or JavaScript. It replaces traditional ORMs.",
       url: "https://www.prisma.io/",
+    },
+    {
+      name: "Firebase",
+      icon: "simple-icons:firebase",
+      description:
+        "Firebase is a set of backend cloud computing services and application development platforms provided by Google.",
+      url: "https://firebase.google.com/",
+    },
+    {
+      name: "Kotlin",
+      icon: "simple-icons:kotlin",
+      description:
+        "Kotlin is a programming language that makes coding concise, cross-platform, and fun. It is Google's preferred language for Android app development.",
+      url: "https://kotlinlang.org/",
+    },
+    {
+      name: "Jetpack Compose",
+      icon: "simple-icons:jetpackcompose",
+      description:
+        "Jetpack Compose is Android’s recommended modern toolkit for building native UI. It simplifies and accelerates UI development on Android. Quickly bring your app to life with less code, powerful tools, and intuitive Kotlin APIs.",
+      url: "https://developer.android.com/jetpack/compose",
+    },
+    {
+      name: "Git",
+      icon: "mdi:git",
+      description:
+        "Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.",
+      url: "https://git-scm.com/",
+    },
+    {
+      name: "Google Cloud Platform",
+      icon: "simple-icons:googlecloud",
+      description:
+        "GCP is a suite of cloud computing services that provides a series of modular cloud services including computing, data storage, data analytics and machine learning, alongside a set of management tools.",
+      url: "https://cloud.google.com/",
+    },
+    {
+      name: "Docker",
+      icon: "simple-icons:docker",
+      description:
+        "Docker is a platform designed to help developers build, share, and run container applications.",
+      url: "https://docker.com/",
     },
   ],
 };
