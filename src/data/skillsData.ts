@@ -81,7 +81,7 @@ const skills: Skill = {
       url: "https://kotlinlang.org/",
     },
     {
-      name: "Jetpack Compose",
+      name: "J. Compose",
       icon: "simple-icons:jetpackcompose",
       description:
         "Jetpack Compose is Android’s recommended modern toolkit for building native UI. It simplifies and accelerates UI development on Android. Quickly bring your app to life with less code, powerful tools, and intuitive Kotlin APIs.",
@@ -95,7 +95,7 @@ const skills: Skill = {
       url: "https://git-scm.com/",
     },
     {
-      name: "Google Cloud Platform",
+      name: "GCP",
       icon: "simple-icons:googlecloud",
       description:
         "GCP is a suite of cloud computing services that provides a series of modular cloud services including computing, data storage, data analytics and machine learning, alongside a set of management tools.",
