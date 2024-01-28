@@ -32,11 +32,11 @@ const skills: Skill = {
       url: "https://reactjs.org/",
     },
     {
-      name: "Nextjs",
-      icon: "akar-icons:nextjs-fill",
+      name: "Redux",
+      icon: "simple-icons:redux",
       description:
-        "Next.js is an open-source React front-end development web framework that enables functionality such as server-side rendering and generating static websites for React based web applications.",
-      url: "https://nextjs.org/",
+        "Redux is a predictable state container for JavaScript apps.",
+      url: "https://redux.js.org/",
     },
     {
       name: "Astro",
@@ -53,13 +53,6 @@ const skills: Skill = {
       url: "https://tailwindcss.com/",
     },
     {
-      name: "Redux",
-      icon: "simple-icons:redux",
-      description:
-        "Redux is a predictable state container for JavaScript apps.",
-      url: "https://redux.js.org/",
-    },
-    {
       name: "Prisma",
       icon: "simple-icons:prisma",
       description:
@@ -72,6 +65,13 @@ const skills: Skill = {
       description:
         "Firebase is a set of backend cloud computing services and application development platforms provided by Google.",
       url: "https://firebase.google.com/",
+    },
+    {
+      name: "Flutter",
+      icon: "simple-icons:flutter",
+      description:
+        "Flutter is an open source framework by Google for building beautiful, natively compiled, multi-platform applications from a single codebase.",
+      url: "https://flutter.dev/",
     },
     {
       name: "Kotlin",
