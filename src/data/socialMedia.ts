@@ -34,10 +34,10 @@ const socialLinks: Social = {
       url: "https://twitter.com/sendhyrama",
     },
     {
-      name: "DEV",
-      icon: "simple-icons:devto",
-      description: "My Devto page",
-      url: "https://dev.to/sendhyrama",
+      name: "Telegram",
+      icon: "simple-icons:telegram",
+      description: "My Telegram",
+      url: "https://t.me/sendhyrama",
     },
     {
       name: "Email",
