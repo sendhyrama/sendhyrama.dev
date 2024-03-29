@@ -1,20 +1,28 @@
 {
-  "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
+    "allowJs": true,
     "baseUrl": ".",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "incremental": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "noEmit": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
     "paths": {
-      "@/*": ["src/*"],
-      "@components/*": ["src/components/*"],
-      "@lib/*": ["src/lib/*"],
-      "@utils/*": ["src/utils/*"],
-      "@content/*": ["src/data/*"],
-      "@styles/*": ["src/styles/*"],
-      "@context/*": ["src/context/*"],
-      "@layout/*": ["src/layout/*"],
-      "@hooks/*": ["src/hooks/*"]
+      "@/*": ["./*"]
     },
-    "jsxImportSource": "react",
-    "jsx": "react-jsx",
-    "types": ["@astrojs/image/client"]
-  }
+    "plugins": [{ "name": "next" }, { "name": "typescript-plugin-css-modules" }],
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "target": "esnext"
+  },
+  "exclude": ["node_modules", ".next"],
+  "include": ["next-env.d.ts", ".next/types/**/*.ts", "env.d.ts", "**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"]
 }

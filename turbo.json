@@ -1,0 +1,26 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "globalDotEnv": ["APP_URL"],
+  "pipeline": {
+    "build": {
+      "inputs": [
+        "app/**",
+        "components/**",
+        "constants/**",
+        "content/**",
+        "hooks/**",
+        "public/**",
+        "schema/**",
+        "server/**",
+        "styles/**",
+        "utils/**",
+        "*.js",
+        "*.ts"
+      ],
+      "outputs": [".next/**", "!.next/cache/**"]
+    },
+    "lint": {
+      "outputs": []
+    }
+  }
+}
