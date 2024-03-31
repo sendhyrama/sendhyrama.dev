@@ -43,29 +43,20 @@ const nextConfig = {
   trailingSlash: false,
   transpilePackages: [],
   webpack: (config, { isServer }) => {
-    // Handle image files
-    config.module.rules.push({
-      test: /\.(png|jpe?g|gif|svg)$/i,
-      use: [
-        {
-          loader: 'url-loader',
-          options: {
-            limit: 8192, // Convert images < 8kb to base64 strings
-            fallback: 'file-loader',
-          },
-        },
-      ],
-    });
-
-    // Fix for dynamic import issue in Next.js
     if (!isServer) {
-      config.resolve.fallback = {
-        ...config.resolve.fallback,
-        fs: false,
-        module: false,
-      };
+      config.module.rules.push({
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              outputPath: 'static/images', // Output path for images
+              publicPath: '/_next/static/images', // Public path for images
+            },
+          },
+        ],
+      });
     }
-
     return config;
   },
 };
