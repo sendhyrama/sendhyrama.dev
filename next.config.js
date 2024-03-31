@@ -42,15 +42,30 @@ const nextConfig = {
   swcMinify: true,
   trailingSlash: false,
   transpilePackages: [],
-  webpack: (config, {}) => {
-    // https://github.com/antfu/shikiji/issues/13#issuecomment-1749588964
+  webpack: (config, { isServer }) => {
+    // Handle image files
     config.module.rules.push({
-      test: /\.m?js$/,
-      type: "javascript/auto",
-      resolve: {
-        fullySpecified: false,
-      },
+      test: /\.(png|jpe?g|gif|svg)$/i,
+      use: [
+        {
+          loader: 'url-loader',
+          options: {
+            limit: 8192, // Convert images < 8kb to base64 strings
+            fallback: 'file-loader',
+          },
+        },
+      ],
     });
+
+    // Fix for dynamic import issue in Next.js
+    if (!isServer) {
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        fs: false,
+        module: false,
+      };
+    }
+
     return config;
   },
 };

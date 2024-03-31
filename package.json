@@ -50,12 +50,15 @@
     "@types/react": "^18.2.73",
     "eslint": "^8.57.0",
     "eslint-config-next": "^14.1.4",
+    "file-loader": "^6.2.0",
+    "image-webpack-loader": "^8.1.0",
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.13",
     "shadcn-ui": "^0.8.0",
     "turbo": "^1.13.0",
     "typescript": "^5.4.3",
-    "typescript-plugin-css-modules": "^5.1.0"
+    "typescript-plugin-css-modules": "^5.1.0",
+    "url-loader": "^4.1.1"
   },
   "private": true,
   "license": "MIT"
