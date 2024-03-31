@@ -1,7 +1,6 @@
 import { customMetadata } from "@/site.config";
 import {
   BookOpenTextIcon,
-  CalendarIcon,
   Code2Icon,
   HomeIcon,
   LibrarySquareIcon,
@@ -15,7 +14,6 @@ export const routes = [
   { Icon: SmileIcon, children: "About", href: "/about" },
   { Icon: BookOpenTextIcon, children: "Articles", href: "/articles" },
   { Icon: Code2Icon, children: "Projects", href: "/projects" },
-  { Icon: CalendarIcon, children: "Schedule", href: customMetadata.scheduleUrl },
 ];
 
 export const routeGroups = [
@@ -26,7 +24,6 @@ export const routeGroups = [
       { Icon: SmileIcon, children: "About", href: "/about" },
       { Icon: BookOpenTextIcon, children: "Articles", href: "/articles" },
       { Icon: Code2Icon, children: "Projects", href: "/projects" },
-      { Icon: CalendarIcon, children: "Schedule", href: customMetadata.scheduleUrl },
     ],
   },
   {

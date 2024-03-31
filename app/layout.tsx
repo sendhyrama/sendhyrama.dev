@@ -28,7 +28,6 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     creator: defaultMetadata.x.creator,
-    creatorId: defaultMetadata.x.creatorId,
     site: defaultMetadata.x.creator,
   },
   robots: {

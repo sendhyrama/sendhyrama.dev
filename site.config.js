@@ -21,6 +21,7 @@ const defaultMetadata = {
   url,
   github: {
     username: "sendhyrama",
+    repository: "sendhyrama.dev",
   },
   x: {
     creator: "sendhyrama",
