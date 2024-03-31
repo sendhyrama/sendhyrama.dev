@@ -1,7 +1,7 @@
 "use client";
 
 import { Signature } from "@/components/signature";
-import imageCover from "@/public/assets/about/cover.jpg";
+import imageCover from "public/assets/about/cover.jpg";
 import { cn } from "@/utils/ui";
 import Image from "next/image";
 import { ComponentProps } from "react";
