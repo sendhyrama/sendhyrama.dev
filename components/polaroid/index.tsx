@@ -1,7 +1,7 @@
 "use client";
 
 import { Signature } from "@/components/signature";
-import imageCover from "public/assets/about/cover.jpg";
+import imageCover from "@/public/assets/about/cover.jpg";
 import { cn } from "@/utils/ui";
 import Image from "next/image";
 import { ComponentProps } from "react";
@@ -27,7 +27,7 @@ export function Polaroid({ className, ...props }: Props) {
       {...props}
     >
       <div className="bg-zinc-500">
-        {/* <Image
+        <Image
           src={imageCover}
           alt="cover"
           fill={false}
@@ -36,7 +36,7 @@ export function Polaroid({ className, ...props }: Props) {
             "aspect-square rounded object-contain object-center",
             "opacity-0 transition-opacity duration-1000 data-[loaded=true]:opacity-100",
           )}
-        /> */}
+        />
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-import imageAvatar from "app/apple-icon.png";
+import imageAvatar from "@/app/memoji-me.png";
 import { defaultMetadata } from "@/site.config";
 import { cn } from "@/utils/ui";
 import Image from "next/image";
@@ -31,11 +31,11 @@ export function Navbar({ className, ...props }: Props) {
         )}
         role="group"
       >
-        {/* <Image
+        <Image
           src={imageAvatar}
           alt={defaultMetadata.title}
           className="pointer-events-none"
-        /> */}
+        />
       </Link>
       <ul className={navbarContainerClassNames}>
         {routes.map((route, i) => (

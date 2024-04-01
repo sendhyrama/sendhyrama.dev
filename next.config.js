@@ -42,21 +42,15 @@ const nextConfig = {
   swcMinify: true,
   trailingSlash: false,
   transpilePackages: [],
-  webpack: (config, { isServer }) => {
-    if (!isServer) {
-      config.module.rules.push({
-        test: /\.(png|jpe?g|gif|svg)$/i,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              outputPath: 'static/images', // Output path for images
-              publicPath: '/_next/static/images', // Public path for images
-            },
-          },
-        ],
-      });
-    }
+  webpack: (config, {}) => {
+    // https://github.com/antfu/shikiji/issues/13#issuecomment-1749588964
+    config.module.rules.push({
+      test: /\.m?js$/,
+      type: "javascript/auto",
+      resolve: {
+        fullySpecified: false,
+      },
+    });
     return config;
   },
 };
