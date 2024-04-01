@@ -23,7 +23,7 @@ export default async function Page() {
         Writing on random personal tidbits.
       </h1>
       <p className="!mb-16 max-w-screen-sm space-y-4 text-balance text-zinc-700 dark:text-zinc-300">
-        Please wait abangkuh, this page is under construction 🚧
+        All of my long-form thoughts on programming, probably about love, life, and everything.
       </p>
       <ul
         className="max-w-screen-sm space-y-12"
