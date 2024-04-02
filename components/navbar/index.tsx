@@ -1,4 +1,4 @@
-import imageAvatar from "@/public/assets/home.png";
+import imageAvatar from "../../public/assets/home.png";
 import { defaultMetadata } from "@/site.config";
 import { cn } from "@/utils/ui";
 import Image from "next/image";
