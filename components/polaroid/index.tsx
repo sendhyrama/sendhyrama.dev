@@ -1,7 +1,5 @@
 "use client";
 
-import { Signature } from "@/components/signature";
-import imageCover from "@/public/assets/about/cover.jpg";
 import { cn } from "@/utils/ui";
 import Image from "next/image";
 import { ComponentProps } from "react";
@@ -27,16 +25,18 @@ export function Polaroid({ className, ...props }: Props) {
       {...props}
     >
       <div className="bg-zinc-500">
-        {/* <Image
-          src={imageCover}
+        <Image
+          src="/assets/about/cover.jpg"
           alt="cover"
+          width={500}
+          height={500}
           fill={false}
           onLoad={(event) => event.currentTarget.setAttribute("data-loaded", "true")}
           className={cn(
             "aspect-square rounded object-contain object-center",
             "opacity-0 transition-opacity duration-1000 data-[loaded=true]:opacity-100",
           )}
-        /> */}
+        />
       </div>
     </div>
   );
