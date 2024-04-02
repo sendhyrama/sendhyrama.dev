@@ -40,6 +40,7 @@ const nextConfig = {
   swcMinify: true,
   trailingSlash: false,
   webpack: (config, { isServer }) => {
+    config.cache = false;
     config.module.rules.push(
       {
         test: /\.(png|jpe?g|gif|svg)$/i,
