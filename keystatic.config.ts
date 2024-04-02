@@ -10,16 +10,13 @@ const isVercelProd = process.env.NEXT_PUBLIC_VERCEL_ENV === "production";
 
 /** @see https://keystatic.com/docs/configuration */
 export default config({
-  storage: isVercelProd
-    ? {
+  storage: {
         kind: "github",
         repo: {
           owner: process.env.NEXT_PUBLIC_VERCEL_GIT_REPO_OWNER || defaultMetadata.github.username,
           name: process.env.NEXT_PUBLIC_VERCEL_GIT_REPO_SLUG || defaultMetadata.github.repository,
         },
-      }
-    : {
-        kind: "local",
+        branchPrefix: 'my-prefix/'
       },
   collections: {
     articles: articleSchema,
