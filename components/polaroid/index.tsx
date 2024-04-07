@@ -27,7 +27,7 @@ export function Polaroid({ className, ...props }: Props) {
     >
       <div className="bg-zinc-500">
         <Image
-          src="/assets/about/cover.jpg"
+          src="https://scontent.fsub8-1.fna.fbcdn.net/v/t39.30808-6/434852776_7287454478003871_2750240696643520139_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGenpXp3bZL6Tnh-gtKUpuAJdXxtEijiLQl1fG0SKOItOFgyq4eTzofU7Hoou93pm1zbrbBHDric-jAAV_WFHoF&_nc_ohc=csBIqLiyvDAAb5hxVLy&_nc_ht=scontent.fsub8-1.fna&cb_e2o_trans=t&oh=00_AfC0Dk3is18VqLo-3ozryu9nqzLSxH7Bsp9qtMXXNRGHqg&oe=661848BA"
           // src={imageCover}
           alt="cover"
           width={500}
