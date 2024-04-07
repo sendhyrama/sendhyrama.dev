@@ -1,6 +1,6 @@
 "use client";
 
-// import imageAvatar from "@/public/assets/home.PNG";
+import imageAvatar from "@/public/assets/home.png";
 import { defaultMetadata } from "@/site.config";
 import { cn } from "@/utils/ui";
 import Image from "next/image";
@@ -33,8 +33,8 @@ export function Navbar({ className, ...props }: Props) {
         )}
         role="group"
       >
-        <Image
-          src="/assets/home.PNG"
+        <img
+          src="/assets/home.png"
           // src={imageAvatar}
           width={36}
           height={36}
