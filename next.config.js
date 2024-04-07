@@ -1,4 +1,4 @@
-const path = require('path');
+// @ts-check
 
 const APP_URL =
   process.env.APP_URL ||
@@ -7,7 +7,7 @@ const APP_URL =
 
 /**
  * @type {import("next").NextConfig}
- * @see https://nextjs.org/docs/api-reference/next.config.js/introduction
+ * @see https://nextjs.org/docs/app/api-reference/next-config-js
  */
 const nextConfig = {
   env: {
@@ -15,15 +15,17 @@ const nextConfig = {
   },
   reactStrictMode: true,
   redirects: async () => {
+    /** @type {import("next/dist/lib/load-custom-routes").Redirect[]} */
     const arr = [
-      { source: '/contact', destination: '/', permanent: false },
-      { source: '/social.png', destination: '/api/opengraph/article', permanent: false },
+      { source: "/contact", destination: "/", permanent: false },
+      { source: "/social.png", destination: "/api/opengraph/article", permanent: false },
+      //
     ];
 
     if (process.env.NEXT_PUBLIC_REDIRECT_HOST) {
       arr.push({
-        source: '/',
-        has: [{ type: 'host', value: process.env.NEXT_PUBLIC_REDIRECT_HOST }],
+        source: "/",
+        has: [{ type: "host", value: process.env.NEXT_PUBLIC_REDIRECT_HOST }],
         destination: APP_URL,
         permanent: false,
       });
@@ -33,26 +35,22 @@ const nextConfig = {
   },
   rewrites: async () => [
     {
-      source: '/.well-known/security.txt',
-      destination: '/security.txt',
+      source: "/.well-known/security.txt",
+      destination: "/security.txt",
     },
   ],
   swcMinify: true,
   trailingSlash: false,
-  webpack: (config, { isServer }) => {
-    config.cache = false;
-    config.module.rules.push(
-      {
-        test: /\.(png|jpe?g|gif|svg)$/i,
-        type: 'asset/resource',
-      }
-    );
-
-    // Ensure that the resolve object has fullySpecified set to false for Next.js 12+
-    if (!isServer) {
-      config.resolve.fullySpecified = false;
-    }
-
+  transpilePackages: [],
+  webpack: (config, {}) => {
+    // https://github.com/antfu/shikiji/issues/13#issuecomment-1749588964
+    config.module.rules.push({
+      test: /\.m?js$/,
+      type: "javascript/auto",
+      resolve: {
+        fullySpecified: false,
+      },
+    });
     return config;
   },
 };
