@@ -33,8 +33,8 @@ export function Navbar({ className, ...props }: Props) {
         )}
         role="group"
       >
-        <img
-          src="/assets/home.png"
+        <Image
+          src="https://sensen.vercel.app/assets/memoji-me.png"
           // src={imageAvatar}
           width={36}
           height={36}
