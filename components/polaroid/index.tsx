@@ -32,7 +32,7 @@ export function Polaroid({ className, ...props }: Props) {
           alt="cover"
           width={500}
           height={500}
-          priority={false}
+          priority={true}
           onLoad={(event) => event.currentTarget.setAttribute("data-loaded", "true")}
           className={cn(
             "aspect-square rounded object-contain object-center",
