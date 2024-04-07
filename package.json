@@ -3,7 +3,7 @@
   "packageManager": "pnpm@8.15.3",
   "scripts": {
     "build": "next build",
-    "dev": "PORT=6796 next dev",
+    "dev": "next dev",
     "lint": "next lint --no-cache",
     "start": "PORT=6796 next start",
     "ui": "shadcn-ui"
