@@ -34,8 +34,8 @@ export function Navbar({ className, ...props }: Props) {
         role="group"
       >
         <Image
-          // src="/assets/home.png"
-          src={imageAvatar}
+          src="/assets/home.png"
+          // src={imageAvatar}
           width={36}
           height={36}
           alt={defaultMetadata.title}
