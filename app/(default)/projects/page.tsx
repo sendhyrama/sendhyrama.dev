@@ -23,7 +23,7 @@ export default async function Page() {
         Things I&apos;ve made trying to put my dent in the universe.
       </h1>
       <p className="!mb-16 max-w-screen-sm space-y-4 text-balance text-zinc-700 dark:text-zinc-300">
-      Please wait abangkuh, this page is under construction 🚧
+      List of my projects that are worth mentioning, may not always update.
       </p>
       <ul
         className={cn(
