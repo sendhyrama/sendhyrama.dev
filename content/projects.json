@@ -1,4 +1,40 @@
 {
   "entries": [
-          ]
+    {
+      "iconUrl": "/assets/projects/entries/0/iconUrl.png",
+      "name": "Simak PPDB",
+      "description": "Web app to automate the selection of new student admissions.",
+      "subtitle": "[Nuxt 2] [Vue.js 2] [BootstrapVue]",
+      "link": {
+        "discriminant": true,
+        "value": {
+          "href": "https://ppdb.simak.id/"
+        }
+      }
+    },
+    {
+      "iconUrl": "/assets/projects/entries/1/iconUrl.png",
+      "name": "Ramadan Countdown",
+      "description": "A simple countdown app for Ramadan, built with Next.js and Keystatic.",
+      "subtitle": "[NextJS] [TailwindCSS] [Keystatic]",
+      "link": {
+        "discriminant": true,
+        "value": {
+          "href": "https://ramadan.sendhyrama.dev/"
+        }
+      }
+    },
+    {
+      "iconUrl": "/assets/projects/entries/2/iconUrl.avif",
+      "name": "Tic-Tac-Toe",
+      "description": "A classic tic-tac-toe game!",
+      "subtitle": "[HTML] [CSS] [JavaScript]",
+      "link": {
+        "discriminant": true,
+        "value": {
+          "href": "https://tictactoe-game-six.vercel.app/"
+        }
+      }
+    }
+  ]
 }
