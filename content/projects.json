@@ -1,7 +1,7 @@
 {
   "entries": [
     {
-      "iconUrl": "/assets/projects/entries/0/iconUrl.png",
+      "iconUrl": "/assets/projects/entries/0/iconUrl.avif",
       "name": "Simak PPDB",
       "description": "Web app to automate the selection of new student admissions.",
       "subtitle": "[Nuxt 2] [Vue.js 2] [BootstrapVue]",
@@ -13,7 +13,7 @@
       }
     },
     {
-      "iconUrl": "/assets/projects/entries/1/iconUrl.png",
+      "iconUrl": "/assets/projects/entries/1/iconUrl.avif",
       "name": "Ramadan Countdown",
       "description": "A simple countdown app for Ramadan, built with Next.js and Keystatic.",
       "subtitle": "[NextJS] [TailwindCSS] [Keystatic]",
