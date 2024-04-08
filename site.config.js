@@ -34,6 +34,7 @@ const customMetadata = {
   githubUrl: `https://github.com/${defaultMetadata.github.username}`,
   linkedInUrl: "https://linkedin.com/in/sendhyrama",
   xUrl: `https://x.com/${defaultMetadata.x.creator}`,
+  scheduleUrl: `https://calendar.app.google/es64jFYJca76c2gW8`,
 };
 
 exports.defaultMetadata = defaultMetadata;
