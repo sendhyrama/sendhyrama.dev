@@ -35,6 +35,14 @@ const customMetadata = {
   linkedInUrl: "https://linkedin.com/in/sendhyrama",
   xUrl: `https://x.com/${defaultMetadata.x.creator}`,
   scheduleUrl: `https://calendar.app.google/es64jFYJca76c2gW8`,
+  telegramUrl: `https://t.me/sendhyrama`,
+  instagramUrl: `https://instagram.com/sendhyrama`,
+  whatsappUrl: `https://wa.me/6282150103051`,
+  discordUrl: `https://discordapp.com/users/831460811847106581`,
+  googledevUrl: `https://g.dev/sendhyrama`,
+  personalwebUrl: `https://sendhyrama.dev`,
+  showwcaseUrl: `https://sendhyrama.showwcase.com`,
+  devtoUrl: `https://dev.to/sendhyrama`,
 };
 
 exports.defaultMetadata = defaultMetadata;
