@@ -16,7 +16,7 @@ export default async function Page() {
       enableNavShadow
       data-stagger-children
     >
-      <h1 className="max-w-screen-sm text-4xl font-bold">Sendhyrama's Mine ✨</h1>
+      <h1 className="max-w-screen-sm text-4xl font-bold">Sendhyrama&apos;s Mine ✨</h1>
       <p className="!mb-16 max-w-screen-sm space-y-4 text-zinc-700 dark:text-zinc-300">
         Here are links to other platforms where you can find me. Might not be active on all of them. Not promising
         anything.
