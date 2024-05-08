@@ -48,7 +48,7 @@ export default async function Page() {
         </Link>
       )}
       <h1 className="mb-2 text-4xl font-bold">{defaultMetadata.title}</h1>
-      <p className="mb-8 text-2xl">{defaultMetadata.description}</p>
+      <p className="mb-8 text-xl">{defaultMetadata.description}</p>
       <div
         className={cn(
           "mb-16 max-w-screen-sm space-y-4 text-zinc-700 dark:text-zinc-300",
