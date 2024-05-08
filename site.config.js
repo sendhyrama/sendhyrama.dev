@@ -15,7 +15,7 @@ const url = `${protocol}://${domain}`;
 /* #__PURE__ */
 const defaultMetadata = {
   title: "Sendhy Ramadhinata",
-  description: "Software engineer specialized in mobile development",
+  description: "Men in stem (sewing, tidying up, errand running, making dinner)",
   email: "sendhyrama@gmail.com",
   domain,
   url,
