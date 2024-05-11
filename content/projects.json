@@ -1,7 +1,7 @@
 {
   "entries": [
     {
-      "iconUrl": "/assets/projects/entries/0/iconUrl.png",
+      "iconUrl": "/assets/projects/entries/0/iconUrl.avif",
       "name": "BakeHouse App",
       "description": "Bakehouse is a marketplace app build to facilitate seamless transactions between MSMEs and buyers, streamlining the buying and selling processes.",
       "subtitle": "[Dart] [Flutter] [Firebase] [Maps API]",
@@ -13,7 +13,7 @@
       }
     },
     {
-      "iconUrl": "/assets/projects/entries/1/iconUrl.jpg",
+      "iconUrl": "/assets/projects/entries/1/iconUrl.avif",
       "name": "BuzzNews App",
       "description": "News app that provides breaking news alerts and personalized news content.",
       "subtitle": "[Dart] [Flutter] [News API]",
@@ -25,7 +25,7 @@
       }
     },
     {
-      "iconUrl": "/assets/projects/entries/2/iconUrl.png",
+      "iconUrl": "/assets/projects/entries/2/iconUrl.avif",
       "name": "BuddyBlues App",
       "description": "BuddyBlues App offers a holistic solution for BuddyBlues sufferers by providing motivational prompts tailored to the user's current mood, personalized to-do lists, and a platform for fostering a supportive community through story sharing.",
       "subtitle": "[Dart] [Flutter] [Firebase] [GCP] [Gemini API]",
@@ -37,7 +37,7 @@
       }
     },
     {
-      "iconUrl": "/assets/projects/entries/3/iconUrl.png",
+      "iconUrl": "/assets/projects/entries/3/iconUrl.avif",
       "name": "Exploreka App",
       "description": "The Exploreka App is a platform designed to help users find and plan their travel journeys, including a range of available travel packages.",
       "subtitle": "[Kotlin] [ExpressJS] [Flask] [Tensorflow] [GCP] [Maps API]",
@@ -49,7 +49,7 @@
       }
     },
     {
-      "iconUrl": "/assets/projects/entries/4/iconUrl.jpg",
+      "iconUrl": "/assets/projects/entries/4/iconUrl.avif",
       "name": "GDSC UPNVJT",
       "description": "Community landing page.",
       "subtitle": "[HTML] [CSS] [JavaScript]",
@@ -73,7 +73,7 @@
       }
     },
     {
-      "iconUrl": "/assets/projects/entries/6/iconUrl.png",
+      "iconUrl": "/assets/projects/entries/6/iconUrl.avif",
       "name": "Stunting DSS",
       "description": "Decision support system to assist community health centers in identifying aid recipients based on government-set stunting provisions. Utilizes AHP and SAW methods.",
       "subtitle": "[Laravel] [Bootstrap] [Mazer]",
@@ -97,7 +97,7 @@
       }
     },
     {
-      "iconUrl": "/assets/projects/entries/8/iconUrl.png",
+      "iconUrl": "/assets/projects/entries/8/iconUrl.avif",
       "name": "Notion Personal Blog",
       "description": "Simple personal blog integrated with Notion as CMS.",
       "subtitle": "[VueJS] [Vite]",
@@ -109,7 +109,7 @@
       }
     },
     {
-      "iconUrl": "/assets/projects/entries/9/iconUrl.png",
+      "iconUrl": "/assets/projects/entries/9/iconUrl.avif",
       "name": "Live Crypto Price",
       "description": "Live crypto price web using Coingecko API v3.",
       "subtitle": "[HTML] [CSS] [JavaScript]",
@@ -121,7 +121,7 @@
       }
     },
     {
-      "iconUrl": "/assets/projects/entries/10/iconUrl.png",
+      "iconUrl": "/assets/projects/entries/10/iconUrl.avif",
       "name": "Pokemon Game",
       "description": "Classic Pokémon battle game.",
       "subtitle": "[HTML] [CSS] [JavaScript]",
