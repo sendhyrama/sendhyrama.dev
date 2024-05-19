@@ -2,13 +2,13 @@
   "entries": [
     {
       "iconUrl": "/assets/projects/entries/0/iconUrl.avif",
-      "name": "BakeHouse App",
-      "description": "Bakehouse is a marketplace app build to facilitate seamless transactions between MSMEs and buyers, streamlining the buying and selling processes.",
-      "subtitle": "[Dart] [Flutter] [Firebase] [Maps API]",
+      "name": "Gemini Chat App",
+      "description": "Flutter chat app with Google Generative AI",
+      "subtitle": "[Dart] [Flutter] [Gemini API]",
       "link": {
         "discriminant": true,
         "value": {
-          "href": "https://github.com/sendhyrama/Bakehouse-App"
+          "href": "https://github.com/sendhyrama/Gemini-Chat-App"
         }
       }
     },
