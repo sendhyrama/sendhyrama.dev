@@ -1,62 +1,51 @@
-"use client";
-
-import imageAvatar from "@/public/assets/home.png";
-import { defaultMetadata } from "@/site.config";
-import { cn } from "@/utils/ui";
-import Image from "next/image";
-import Link from "next/link";
-import { ComponentPropsWithoutRef } from "react";
-import { MobileSheetButton } from "./mobile-sheet-button";
+import { MobileDrawerButton } from "./mobile-drawer-button";
+import { NavHome } from "./nav-home";
 import { NavItem } from "./nav-item";
 import { routes } from "./routes";
-import { navbarContainerClassNames } from "./styles";
+import * as styles from "./styles";
 import { ThemeButton } from "./theme-button";
 
-type Props = ComponentPropsWithoutRef<"nav">;
-
-export function Navbar({ className, ...props }: Props) {
+export function Navbar() {
   return (
-    <nav
-      className={cn(
-        "container flex items-center gap-x-2 py-4 text-sm",
-        "pointer-events-none [&>*]:pointer-events-auto",
-        className,
-      )}
-      {...props}
-    >
-      <Link
-        href="/"
-        className={cn(
-          "group overflow-hidden max-sm:hidden",
-          "h-9 w-9 rounded-full border border-zinc-500/25 shadow-md",
-          "bg-zinc-500/25 transition hover:bg-primary-500/50",
-        )}
-        role="group"
-      >
-        <Image
-          src="https://storage.googleapis.com/bucket-sendhyrama/home.png"
-          width={36}
-          height={36}
-          alt={defaultMetadata.title}
-          className="pointer-events-none"
-        />
-      </Link>
-      <ul className={navbarContainerClassNames}>
-        {routes.map((route, i) => (
-          <li
-            key={i}
-            className="max-sm:hidden"
-          >
-            <NavItem {...route} />
+    <div className={styles.navbarRoot}>
+      {Array(10)
+        .fill(1)
+        .map((v, i) => {
+          const blurDef = `blur(${v + i}px)`;
+          const maskDef = `linear-gradient(to bottom, rgba(0,0,0,0) ${i * 10}%, rgba(0,0,0,1) ${(v + i) * 10}%)`;
+          return (
+            <div
+              className={styles.navbarBlurItem}
+              key={i}
+              style={{
+                backdropFilter: blurDef,
+                WebkitBackdropFilter: blurDef,
+                maskImage: maskDef,
+                WebkitMaskImage: maskDef,
+              }}
+            />
+          );
+        })}
+      <nav className={styles.navbarContainer}>
+        <NavHome />
+        <ul className={styles.navbarRoutesContainer}>
+          {routes.slice(1).map((route, i) => (
+            <li
+              className="max-sm:hidden"
+              key={i}
+            >
+              <NavItem {...route} />
+            </li>
+          ))}
+          <li className="sm:hidden">
+            <MobileDrawerButton />
           </li>
-        ))}
-        <li className="sm:hidden">
-          <MobileSheetButton />
-        </li>
-      </ul>
-      <div className={cn(navbarContainerClassNames, "px-2")}>
-        <ThemeButton />
-      </div>
-    </nav>
+          <div className="my-2 w-px rounded-full bg-zinc-500/25" />
+          <li>
+            <ThemeButton />
+          </li>
+        </ul>
+      </nav>
+    </div>
   );
 }

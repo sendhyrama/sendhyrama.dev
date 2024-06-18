@@ -1,6 +1,7 @@
 import { Launchpad } from "@/components/launchpad";
 import { MediaQuery } from "@/components/media-query";
 import { Navbar } from "@/components/navbar";
+import { cn } from "@/utils/ui";
 import { ReactNode } from "react";
 import styles from "./layout.module.css";
 import Providers from "./providers";
@@ -8,28 +9,20 @@ import Providers from "./providers";
 export default function Layout({ children }: { children: ReactNode }) {
   return (
     <Providers>
-      <noscript>
-        <style dangerouslySetInnerHTML={{ __html: noscriptStyles }} />
-      </noscript>
       <div className={styles.beams} />
+      <Navbar />
       <main
-        className="relative flex-grow overflow-x-hidden"
-        style={{ opacity: 0 }}
+        className={cn(
+          "pb-32 pt-8",
+          "container relative isolate max-w-screen-md flex-grow",
+          "before:pointer-events-none before:fixed before:inset-x-0 before:bottom-0 before:z-10 before:h-8 before:max-sm:hidden",
+        )}
       >
         {children}
       </main>
-      <Navbar className="sticky bottom-0 left-0 z-50" />
       <MediaQuery query="(min-width: 640px)">
         <Launchpad />
       </MediaQuery>
     </Providers>
   );
 }
-
-const css = String.raw;
-
-const noscriptStyles = css`
-  main {
-    opacity: 1;
-  }
-`;
