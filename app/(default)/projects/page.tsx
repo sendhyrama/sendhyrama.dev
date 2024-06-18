@@ -1,6 +1,6 @@
 import { AdaptiveLink } from "@/components/adaptive-link";
 import { ContainerSection } from "@/components/container-section";
-import { GitHubIcon } from "lucide-react";
+import { GithubIcon } from "lucide-react";
 import { getProjects } from "@/server/keystatic";
 import { trimHttp } from "@/utils/string";
 import { cn } from "@/utils/ui";
@@ -41,7 +41,7 @@ export default async function Page() {
                   src={project.iconUrl}
                 />
               );
-            if (project.link.value?.href.includes("github.com")) return <GitHubIcon />;
+            if (project.link.value?.href.includes("github.com")) return <GithubIcon />;
             return <BracesIcon />;
           }
           return (
