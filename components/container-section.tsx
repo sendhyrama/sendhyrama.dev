@@ -9,7 +9,7 @@ export function ContainerSection({ enableNavShadow = false, className, ...props 
   return (
     <section
       className={cn(
-        "pt-4",
+        "pt-3",
         enableNavShadow,
         className)}
       {...props}
