@@ -51,7 +51,7 @@ export default async function Page() {
       <p className="mb-8 text-xl">{defaultMetadata.description}</p>
       <div
         className={cn(
-          "mb-16 max-w-screen-sm space-y-4 text-zinc-700 dark:text-zinc-300",
+          "mb-16 space-y-4 text-zinc-700 dark:text-zinc-300",
           "[&_a:hover]:underline [&_a]:text-primary-600 dark:[&_a]:text-primary-500",
         )}
       >
