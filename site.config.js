@@ -34,7 +34,7 @@ const customMetadata = {
   githubUrl: `https://github.com/${defaultMetadata.github.username}`,
   linkedInUrl: "https://linkedin.com/in/sendhyrama",
   xUrl: `https://x.com/${defaultMetadata.x.creator}`,
-  scheduleUrl: `https://calendar.app.google/es64jFYJca76c2gW8`,
+  scheduleUrl: `https://cal.com/sendhyrama`,
   telegramUrl: `https://t.me/sendhyrama`,
   instagramUrl: `https://instagram.com/sendhyrama`,
   whatsappUrl: `https://wa.me/6282150103051`,
