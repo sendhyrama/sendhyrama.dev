@@ -1,0 +1,51 @@
+---
+title: Securing Firebase Project
+description: '#Firebase #Programming #Thought'
+publishedAt: 2024-10-06
+draft: false
+redirect:
+  discriminant: false
+---
+> *Note: Every project has unique needs, so make sure to adjust these tips to fit your needs.*
+
+\
+If you’re developing apps with Firebase, it's important to keep in mind that Firebase configurations (especially for web apps) are exposed to the client. Why is this a concern? Someone could use your exposed Firebase config for malicious purposes. While many guides explain securing Firebase projects through security rules and authentication, there’s more you can do. You can set up security rules directly in the Firebase console or use the Firebase CLI for managing your rules more efficiently. But here’s how you can prevent unauthorized access to your Firebase data.
+
+## Limit API Key Access
+
+Each Firebase project is actually a Google Cloud Platform (GCP) project, so you can set up extra security on that. Even if the API key is exposed, you can limit where it can be used. Follow these steps:
+
+1. Go to the [https://console.cloud.google.com/apis](https://console.cloud.google.com/apis).
+1. Choose your Firebase project.
+1. In the `Credentials` menu, find the API key that Firebase automatically created for you.
+1. Click on that key, and you'll be taken to a page called `Restrict and rename API key`
+1. Under `Application restrictions` choose `HTTP referrers (web sites)` and add the domain of your production website under `Website restrictions`. Don’t include `localhost` if you’re setting this up for production use.
+1. Click `Save` to apply the changes.
+
+And just like that, your API key is restricted to specific websites!
+
+## Use a Separate Firebase Project for Local Development
+
+Now that your API key is secure for production, what about local development (like when you're working on `localhost`)? The solution is simple: create a separate Firebase project just for local testing and development.
+
+## Special Case: Developing Hybrid App with Flutter
+
+When developing mobile apps with Flutter, you might be using the same Firebase configuration for both your web and mobile builds (Android/iOS). One issue here is that the API key remains the same, even if you create different configurations. If you restrict the API key to only work on certain domains (for web apps), this can prevent it from working properly in your mobile app builds.
+
+A simple solution is to create a new API key specifically for mobile apps. Since API keys in mobile builds are harder to extract, this is a safe approach.
+
+To set up a new API key for mobile builds:
+
+1. Go to the [https://console.cloud.google.com/apis/credentials](https://console.cloud.google.com/apis/credentials) and select your Firebase project.
+1. Create a new API key without domain restrictions, which will be used exclusively for your mobile apps.
+
+By doing this, you’ll be able to use the same Firebase setup for both web and mobile, but with different API keys for enhanced security.
+
+---
+
+**References:**
+
+- Restrict API Key
+  - [**https://medium.com/@devesu/how-to-secure-your-firebase-project-even-when-your-api-key-is-publicly-available-a462a2a58843**](https://medium.com/@devesu/how-to-secure-your-firebase-project-even-when-your-api-key-is-publicly-available-a462a2a58843)
+- Defining Firebase security rules
+  - [**https://www.npmjs.com/package/@jahed/firebase-rules**](https://www.npmjs.com/package/@jahed/firebase-rules)
