@@ -1,9 +1,16 @@
-import { getTalk } from "@/server/keystatic";
+import { getTalk, getSortedTalks } from "@/server/keystatic";
 import { Metadata } from "next";
 import { notFound, redirect } from "next/navigation";
 
 interface TalkPageProps {
   params: { slug: string };
+}
+
+export async function generateStaticParams() {
+  const talks = await getSortedTalks();
+  return talks.map((talk) => ({
+    slug: talk.slug,
+  }));
 }
 
 export async function generateMetadata({ params }: TalkPageProps): Promise<Metadata> {
