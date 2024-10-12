@@ -1,9 +1,9 @@
 import { AdaptiveLink } from "@/components/adaptive-link";
 import { ContainerSection } from "@/components/container-section";
-import { getSortedTalks } from "@/server/keystatic"; // Make sure you have a function to get sorted talks
+import { getSortedTalks } from "@/server/keystatic";
 import { formatLongDate } from "@/utils/intl";
 import { cn } from "@/utils/ui";
-import { ArrowRightIcon, CalendarIcon } from "lucide-react";
+import { CalendarIcon } from "lucide-react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -26,12 +26,8 @@ export default async function Page() {
       <p className="!mb-16 max-w-screen-sm space-y-4 text-balance text-zinc-700 dark:text-zinc-300">
         Ngomong yang penting ❌ | Yang penting ngomong ✅
       </p>
-      <ul
-        className="max-w-screen-sm space-y-12"
-        data-stagger-children
-      >
+      <ul className="max-w-screen-sm space-y-12" data-stagger-children>
         {talks.map(({ slug, entry }) => {
-
           return (
             <li
               key={slug}
@@ -43,25 +39,45 @@ export default async function Page() {
                 "before:-inset-1 hover:before:-inset-4"
               )}
             >
-              <div className="mb-2 text-balance text-xl font-bold">{entry.title}</div>
-              <div className="mb-2 text-balance text-sm text-zinc-700 dark:text-zinc-300">
-                {entry.description}
-              </div>
+              <AdaptiveLink
+                href={`/talks/${slug}`}
+                className="flex flex-col space-y-2"
+              >
+                <div className="mb-2 text-balance text-xl font-bold">{entry.title}</div>
+                <div className="mb-2 text-balance text-sm text-zinc-700 dark:text-zinc-300">
+                  {entry.description}
+                </div>
+              </AdaptiveLink>
               <div className="mt-4 flex items-center gap-x-2 text-sm text-zinc-700 dark:text-zinc-300">
                 <CalendarIcon className="h-3 w-3" />
                 <time dateTime={entry.publishedAt}>{formatLongDate(entry.publishedAt)}</time>
                 <div className="flex-grow" />
+
                 <AdaptiveLink
-                  href={`/talks/${slug}`} // Navigate to the individual talk page
+                  href={`/talks/${slug}`}
                   className={cn(
-                    "flex items-center gap-x-2 hover:underline",
-                    "text-primary-600 dark:text-primary-500",
-                    "before:absolute before:-inset-4"
+                    "relative z-20 hover:underline",
+                    "text-primary-600 dark:text-primary-500"
                   )}
                 >
-                  <div>View Slide</div>
-                  <ArrowRightIcon className="h-3 w-3" aria-hidden="true" />
+                  View Slide
                 </AdaptiveLink>
+
+                {entry.postUrl && (
+                  <>
+                    <span className="mx-0 text-zinc-500 dark:text-zinc-400">|</span>
+                    <AdaptiveLink
+                      href={entry.postUrl}
+                      target="_blank"
+                      className={cn(
+                        "relative z-20 hover:underline",
+                        "text-primary-600 dark:text-primary-500"
+                      )}
+                    >
+                      View Post
+                    </AdaptiveLink>
+                  </>
+                )}
               </div>
             </li>
           );

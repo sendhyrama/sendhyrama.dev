@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: TalkPageProps): Promise<Metad
 export default async function TalkPage({ params }: TalkPageProps) {
   const talk = await getTalk(params.slug).catch(() => notFound());
 
-  redirect(talk.url);
+  redirect(talk.slideUrl);
 
   return null;
 }

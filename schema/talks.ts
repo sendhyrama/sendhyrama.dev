@@ -1,4 +1,3 @@
-// schema/talks.ts
 import { collection, fields } from "@keystatic/core";
 
 export const talkSchema = collection({
@@ -29,10 +28,15 @@ export const talkSchema = collection({
       defaultValue: { kind: "today" },
       validation: { isRequired: true },
     }),
-    url: fields.url({
-      label: "External URL",
+    slideUrl: fields.url({
+      label: "Slide URL",
       description: "The URL to the external slides (e.g., Google Slides, Figma, or other platforms)",
       validation: { isRequired: true },
+    }),
+    postUrl: fields.url({
+      label: "Post URL",
+      description: "The URL to the post about this talk event",
+      validation: { isRequired: false },
     }),
   },
   previewUrl: `${process.env.APP_URL}/talks/{slug}`,
