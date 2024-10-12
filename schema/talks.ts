@@ -29,9 +29,9 @@ export const talkSchema = collection({
       defaultValue: { kind: "today" },
       validation: { isRequired: true },
     }),
-    embedCode: fields.text({
-      label: "Embed Code",
-      description: "The HTML embed code for slides (e.g., iframe from Google Slides, Figma, etc.)",
+    url: fields.url({
+      label: "External URL",
+      description: "The URL to the external slides (e.g., Google Slides, Figma, or other platforms)",
       validation: { isRequired: true },
     }),
   },
