@@ -54,7 +54,8 @@ export default async function Page() {
                 <div className="flex-grow" />
 
                 <AdaptiveLink
-                  href={`/talks/${slug}`}
+                  href={entry.slideUrl || `/talks/${slug}`}
+                  target={entry.slideUrl ? "_blank" : "_self"}
                   className={cn(
                     "relative z-20 hover:underline",
                     "text-primary-600 dark:text-primary-500"
