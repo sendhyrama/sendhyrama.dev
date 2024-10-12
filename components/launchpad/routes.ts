@@ -18,7 +18,7 @@ export const routes = [
   { Icon: Code2Icon, children: "Projects", href: "/projects" },
   { Icon: SpeakerIcon, children: "Talks", href: "/talks" },
   { Icon: LinkIcon, children: "Socials", href: "/links" },
-  { Icon: CalendarIcon, children: "Book an Appointment", href: customMetadata.scheduleUrl },
+  { Icon: CalendarIcon, children: "Appointment", href: customMetadata.scheduleUrl },
 ];
 
 export const routeGroups = [
@@ -31,7 +31,7 @@ export const routeGroups = [
       { Icon: Code2Icon, children: "Projects", href: "/projects" },
       { Icon: SpeakerIcon, children: "Talks", href: "/talks" },
       { Icon: LinkIcon, children: "Socials", href: "/links" },
-      { Icon: CalendarIcon, children: "Book an Appointment", href: customMetadata.scheduleUrl },
+      { Icon: CalendarIcon, children: "Appointment", href: customMetadata.scheduleUrl },
     ],
   },
   {

@@ -7,5 +7,5 @@ export const routes = [
   { children: "Projects", href: "/projects" },
   { children: "Talks", href: "/talks" },
   { children: "Socials", href: "/links" },
-  { children: "Book an Appointment", href: customMetadata.scheduleUrl },
+  { children: "Appointment", href: customMetadata.scheduleUrl },
 ];
