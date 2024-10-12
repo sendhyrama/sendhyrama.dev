@@ -21,6 +21,18 @@ export const getSortedArticles = cache(async () => {
   return sortedArticles;
 });
 
+export const getTalk = cache(getReader().collections.talks.readOrThrow);
+export const getSortedTalks = cache(async () => {
+  const reader = getReader();
+  const talks = await reader.collections.talks.all();
+  return talks.sort((a, b) => {
+    const dateA = new Date(a.entry.publishedAt).getTime();
+    const dateB = new Date(b.entry.publishedAt).getTime();
+    return dateB - dateA;
+  });
+});
+
+
 export const getCustomPages = cache(getReader().collections.pages.all);
 export const getCustomPage = cache(getReader().collections.pages.readOrThrow);
 

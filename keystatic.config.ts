@@ -5,6 +5,7 @@ import { customPageSchema } from "./schema/custom-pages";
 import { homeSchema } from "./schema/home";
 import { projectSchema } from "./schema/projects";
 import { defaultMetadata } from "./site.config";
+import { talkSchema } from "./schema/talks";
 
 const isVercelProd = process.env.NEXT_PUBLIC_VERCEL_ENV === "production";
 
@@ -25,6 +26,7 @@ export default config({
   collections: {
     articles: articleSchema,
     pages: customPageSchema,
+    talks: talkSchema,
   },
   singletons: {
     home: homeSchema,
@@ -36,7 +38,7 @@ export default config({
       name: defaultMetadata.title,
     },
     navigation: {
-      Content: ["articles", "pages", "projects"],
+      Content: ["articles", "talks", "pages", "projects"],
       Settings: ["home", "about"],
     },
   },

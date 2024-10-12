@@ -7,6 +7,7 @@ import {
   LibrarySquareIcon,
   LinkIcon,
   SmileIcon,
+  SpeakerIcon,
   SwordsIcon,
 } from "lucide-react";
 
@@ -15,6 +16,7 @@ export const routes = [
   { Icon: SmileIcon, children: "About", href: "/about" },
   { Icon: BookOpenTextIcon, children: "Articles", href: "/articles" },
   { Icon: Code2Icon, children: "Projects", href: "/projects" },
+  { Icon: SpeakerIcon, children: "Talks", href: "/talks" },
   { Icon: LinkIcon, children: "Socials", href: "/links" },
   { Icon: CalendarIcon, children: "Book an Appointment", href: customMetadata.scheduleUrl },
 ];
@@ -27,6 +29,7 @@ export const routeGroups = [
       { Icon: SmileIcon, children: "About", href: "/about" },
       { Icon: BookOpenTextIcon, children: "Articles", href: "/articles" },
       { Icon: Code2Icon, children: "Projects", href: "/projects" },
+      { Icon: SpeakerIcon, children: "Talks", href: "/talks" },
       { Icon: LinkIcon, children: "Socials", href: "/links" },
       { Icon: CalendarIcon, children: "Book an Appointment", href: customMetadata.scheduleUrl },
     ],
