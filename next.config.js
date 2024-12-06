@@ -56,10 +56,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  experimental: {
-    // @ts-ignore
-    appDir: true,
-  },
 };
 
 module.exports = nextConfig;
