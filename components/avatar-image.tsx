@@ -21,7 +21,7 @@ export function AvatarImage({ className, ...props }: Props) {
       )}
       data-loaded={useStore()}
       onLoad={() => useStore.setState(true)}
-      src="https://storage.googleapis.com/bucket-sendhyrama/home.png"
+      src="/home.png"
       width={500}
       height={500}
       {...props}
