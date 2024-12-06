@@ -21,7 +21,7 @@ export function AvatarImage({ className, ...props }: Props) {
       )}
       data-loaded={useStore()}
       onLoad={() => useStore.setState(true)}
-      src="/home.png"
+      src="https://i.ibb.co.com/MDqhH5D/home.png"
       width={500}
       height={500}
       {...props}
