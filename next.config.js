@@ -38,6 +38,10 @@ const nextConfig = {
       source: "/.well-known/security.txt",
       destination: "/security.txt",
     },
+    {
+      source: "/resume",
+      destination: "/resume.pdf",
+    },
   ],
   swcMinify: true,
   trailingSlash: false,
