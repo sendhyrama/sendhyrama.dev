@@ -42,7 +42,7 @@ const customMetadata = {
   personalwebUrl: `https://sendhyrama.dev`,
   showwcaseUrl: `https://sendhyrama.showwcase.com`,
   devtoUrl: `https://dev.to/sendhyrama`,
-  stravaUrl: `https://www.strava.com/athletes/135632098`,
+  stravaUrl: `https://www.strava.com/athletes/sendhyrama`,
   threadsUrl: `https://www.threads.net/@sendhyrama`,
   spotifyUrl: `https://open.spotify.com/user/31u2aussu6bmb63igjp7j2vnqkce`,
   soundcloudUrl: `https://soundcloud.com/sendhyrama`,
