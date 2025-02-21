@@ -27,7 +27,7 @@ export function Polaroid({ className, ...props }: Props) {
     >
       <div className="bg-zinc-500">
         <Image
-          src="https://i.ibb.co.com/ScWPQ4p/sendhy-runn.jpg"
+          src="https://i.ibb.co.com/nszYSSy0/IMG-20240616-153252.jpg"
           alt="cover"
           width={500}
           height={500}
