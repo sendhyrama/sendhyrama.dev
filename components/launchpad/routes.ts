@@ -17,7 +17,7 @@ export const routes = [
   { Icon: SpeakerIcon, children: "Talks", href: "/talks" },
   { Icon: BookOpenTextIcon, children: "Articles", href: "/articles" },
   { Icon: Code2Icon, children: "Projects", href: "/projects" },
-  { Icon: LinkIcon, children: "Socials", href: "/links" },
+  { Icon: LinkIcon, children: "Links", href: "/links" },
   { Icon: CalendarIcon, children: "Appointment", href: customMetadata.scheduleUrl },
 ];
 
@@ -30,7 +30,7 @@ export const routeGroups = [
       { Icon: SpeakerIcon, children: "Talks", href: "/talks" },
       { Icon: BookOpenTextIcon, children: "Articles", href: "/articles" },
       { Icon: Code2Icon, children: "Projects", href: "/projects" },
-      { Icon: LinkIcon, children: "Socials", href: "/links" },
+      { Icon: LinkIcon, children: "Links", href: "/links" },
       { Icon: CalendarIcon, children: "Appointment", href: customMetadata.scheduleUrl },
     ],
   },

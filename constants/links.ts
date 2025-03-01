@@ -12,7 +12,8 @@ import {
   LinkedinIcon,
   Mail,
   Send,
-  SquareCode
+  SquareCode,
+  SwitchCamera
 } from "lucide-react";
 
 export const links = [
@@ -30,7 +31,8 @@ export const links = [
 ];
 
 export const wholeLinks = [
-  { href: customMetadata.personalwebUrl, Icon: CodeXml, label: "Personal Web" },
+  { href: customMetadata.lynkIdUrl, Icon: SwitchCamera, label: "Lightroom Presets Pack" },
+  { href: customMetadata.personalwebUrl, Icon: CodeXml, label: "Personal Website" },
   { href: customMetadata.googledevUrl, Icon: SquareCode, label: "Google Dev Profile" },
   { href: customMetadata.githubUrl, Icon: GithubIcon, label: "GitHub" },
   { href: customMetadata.linkedInUrl, Icon: LinkedinIcon, label: "LinkedIn" },
@@ -41,5 +43,5 @@ export const wholeLinks = [
   { href: customMetadata.stravaUrl, Icon: StravaIcon, label: "Strava" },
   { href: customMetadata.spotifyUrl, Icon: SpotifyIcon, label: "Spotify" },
   { href: customMetadata.soundcloudUrl, Icon: SoundCloudIcon, label: "SoundCloud" },
-  { href: customMetadata.threadsUrl, Icon: ThreadsIcon, label: "Threads" },
+  // { href: customMetadata.threadsUrl, Icon: ThreadsIcon, label: "Threads" },
 ];

@@ -6,6 +6,6 @@ export const routes = [
   { children: "Talks", href: "/talks" },
   { children: "Articles", href: "/articles" },
   { children: "Projects", href: "/projects" },
-  { children: "Socials", href: "/links" },
+  { children: "Links", href: "/links" },
   { children: "Appointment", href: customMetadata.scheduleUrl },
 ];

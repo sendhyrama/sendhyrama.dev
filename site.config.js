@@ -46,6 +46,7 @@ const customMetadata = {
   threadsUrl: `https://www.threads.net/@sendhyrama`,
   spotifyUrl: `https://open.spotify.com/user/31u2aussu6bmb63igjp7j2vnqkce`,
   soundcloudUrl: `https://soundcloud.com/sendhyrama`,
+  lynkIdUrl: `https://lynk.id/sendhyrama`,
 };
 
 exports.defaultMetadata = defaultMetadata;
